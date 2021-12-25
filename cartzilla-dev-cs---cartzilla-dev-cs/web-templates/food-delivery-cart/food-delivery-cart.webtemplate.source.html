@@ -1,0 +1,98 @@
+{% include 'food-delivery-header'%}
+{% block page-title %}
+<div class="container pt-4 pb-3 py-sm-4">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
+            <li class="breadcrumb-item"><a class="text-nowrap" href="/"><i class="ci-home"></i>Home</a></li>
+            <li class="breadcrumb-item text-nowrap active" aria-current="page">Cart</li>
+          </ol>
+        </nav>
+        <div class="rounded-3 shadow-lg mt-4 mb-5">
+          <ul class="nav nav-tabs nav-justified mb-4">
+            <li class="nav-item"><a class="nav-link fs-lg fw-medium py-4 active" href="food-delivery-cart">1. Your order</a></li>
+            <li class="nav-item"><a class="nav-link fs-lg fw-medium py-4" href="food-delivery-checkout">2. Checkout</a></li>
+          </ul>
+          <div class="px-3 px-sm-4 px-xl-5 pt-1 pb-4 pb-sm-5">
+            <div class="row">
+{% endblock %}            
+              <!-- Items in cart-->
+              <div class="col-lg-8 col-md-7 pt-sm-2">
+{% block item %}              
+                <!-- Item-->
+                <div class="d-sm-flex justify-content-between align-items-center mt-3 mb-4 pb-3 border-bottom">
+                  <div class="d-block d-sm-flex align-items-center text-center text-sm-start"><a class="d-inline-block flex-shrink-0 mx-auto me-sm-4" href="#"><img src="/resources/vendor/img/food-delivery/cart/01.jpg" width="120" alt="Pizza"></a>
+                    <div class="pt-2">
+                      <h3 class="product-title fs-base mb-2"><a href="#">Pizza Pepperoni with Tomatoes</a></h3>
+                      <div class="fs-sm"><span class="text-muted me-2">Size:</span>Medium</div>
+                      <div class="fs-sm"><span class="text-muted me-2">Base:</span>Standard</div>
+                      <div class="fs-lg text-accent pt-2">$9.<small>00</small></div>
+                    </div>
+                  </div>
+                  <div class="pt-2 pt-sm-0 ps-sm-3 mx-auto mx-sm-0 text-center text-sm-start" style="max-width: 9rem;">
+                    <label class="form-label" for="quantity1">Quantity</label>
+                    <input class="form-control" type="number" id="quantity1" value="1" min="1">
+                    <button class="btn btn-link px-0 text-danger" type="button"><i class="ci-close-circle me-2"></i><span class="fs-sm">Remove</span></button>
+                  </div>
+                </div>             
+                <!-- Item-->
+                <div class="d-sm-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+                  <div class="d-block d-sm-flex align-items-center text-center text-sm-start"><a class="d-inline-block flex-shrink-0 mx-auto me-sm-4" href="#"><img src="/resources/vendor/img/food-delivery/cart/02.jpg" width="120" alt="Burger"></a>
+                    <div class="pt-2">
+                      <h3 class="product-title fs-base mb-2"><a href="#">Beef Burger with Fries</a></h3>
+                      <div class="fs-sm"><span class="text-muted me-2">Size:</span>XL</div>
+                      <div class="fs-sm"><span class="text-muted me-2">Sauce:</span>Barbeque</div>
+                      <div class="fs-lg text-accent pt-2">$12.<small>00</small></div>
+                    </div>
+                  </div>
+                  <div class="pt-2 pt-sm-0 ps-sm-3 mx-auto mx-sm-0 text-center text-sm-start" style="max-width: 9rem;">
+                    <label class="form-label" for="quantity2">Quantity</label>
+                    <input class="form-control" type="number" id="quantity2" value="1" min="1">
+                    <button class="btn btn-link px-0 text-danger" type="button"><i class="ci-close-circle me-2"></i><span class="fs-sm">Remove</span></button>
+                  </div>
+                </div>
+                <!-- Item-->
+                <div class="d-sm-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+                  <div class="d-block d-sm-flex align-items-center text-center text-sm-start"><a class="d-inline-block flex-shrink-0 mx-auto me-sm-4" href="#"><img src="/resources/vendor/img/food-delivery/cart/03.jpg" width="120" alt="Drink"></a>
+                    <div class="pt-2">
+                      <h3 class="product-title fs-base mb-2"><a href="#">Coca Cola Can, 335ml</a></h3>
+                      <div class="fs-sm"><span class="text-muted me-2">Size:</span>335ml</div>
+                      <div class="fs-lg text-accent pt-2">$1.<small>00</small></div>
+                    </div>
+                  </div>
+                  <div class="pt-2 pt-sm-0 ps-sm-3 mx-auto mx-sm-0 text-center text-sm-start" style="max-width: 9rem;">
+                    <label class="form-label" for="quantity3">Quantity</label>
+                    <input class="form-control" type="number" id="quantity3" value="3" min="1">
+                    <button class="btn btn-link px-0 text-danger" type="button"><i class="ci-close-circle me-2"></i><span class="fs-sm">Remove</span></button>
+                  </div>
+                </div>
+              </div>
+{% endblock %}              
+              <!-- Sidebar-->
+{% block sidebar %}
+
+              <div class="col-lg-4 col-md-5 pt-3 pt-sm-4">
+                <div class="rounded-3 bg-secondary px-3 px-sm-4 py-4">
+                  <div class="text-center mb-4 pb-3 border-bottom">
+                    <h3 class="h5 mb-3 pb-1">Total</h3>
+                    <h4 class="fw-normal">$24.<small>00</small></h4>
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label mb-3" for="order-comments"><span class="badge bg-info fs-xs me-2">Note</span>Additional comments</label>
+                    <textarea class="form-control" rows="4" id="order-comments"></textarea>
+                  </div>
+                  <h3 class="h6 mb-4">Apply promo code</h3>
+                  <form class="needs-validation" method="post" novalidate="">
+                    <div class="mb-3">
+                      <input class="form-control" type="text" placeholder="Promo code" required="">
+                      <div class="invalid-feedback">Please provide promo code.</div>
+                    </div>
+                    <button class="btn btn-outline-primary d-block w-100" type="submit">Apply promo code</button>
+                  </form><a class="btn btn-primary btn-shadow d-block w-100 mt-4 mb-3" href="food-delivery-checkout"><i class="ci-card fs-lg me-2"></i>Proceed to Checkout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+{% endblock %}        
+      </div>
+{% include 'food-delivery-footer'%}

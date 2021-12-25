@@ -1,0 +1,35 @@
+{% assign showchildren = showchildren | default: true %}
+{% assign showdescriptions = showdescriptions | default: false %}
+
+{% if showchildren and page.children.size > 0 %}
+  <div class="child-navigation content-panel panel panel-default">
+    <div class="panel-heading">
+      <h4>{% editable snippets "Page Children Heading" default: 'In This Section' %}</h4>
+    </div>
+    {% if showdescriptions %}
+      <ul class="list-group">
+        {% for node in page.children %}
+          <li class="list-group-item">
+            <h4 class="list-group-item-heading">
+              <a href="{{ node.url | escape }}">{{ node.title | escape }}</a>
+            </h4>
+            <div class="list-group-item-text">
+              {% case node.entity.logical_name %}
+              {% when 'adx_blog' or 'adx_event' or 'adx_webfile' or 'adx_webpage' %}
+                {{ node.entity.adx_summary}}
+              {% else %}
+                {{ node.entity.adx_description}}
+              {% endcase %}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <div class="list-group">
+        {% for node in page.children %}
+          <a href="{{ node.url | escape }}" class="list-group-item">{{ node.title | escape }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

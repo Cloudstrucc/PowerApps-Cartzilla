@@ -1,0 +1,12 @@
+adx_append: false
+adx_appendto: false
+adx_create: true
+adx_delete: false
+adx_entitylogicalname: contact
+adx_entityname: Cartzilla Profile
+adx_entitypermission_webrole:
+- 08dd5181-d541-ec11-8c62-0022483be0c0
+adx_entitypermissionid: 20908969-c64b-ec11-8f8e-000d3ae9ac38
+adx_read: true
+adx_scope: 756150000
+adx_write: true

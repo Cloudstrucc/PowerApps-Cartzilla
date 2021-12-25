@@ -1,0 +1,30 @@
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 2
+  adx_displaypagechildlinks: false
+  adx_name: Store locator
+  adx_openinnewwindow: false
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 42050503-eb5d-ec11-8f8e-000d3a845c50
+  adx_weblinksetid: dd6eb4e9-ea5d-ec11-8f8e-000d3a845c50
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 1
+  adx_displaypagechildlinks: false
+  adx_name: About us
+  adx_openinnewwindow: false
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 989172fb-ea5d-ec11-8f8e-000d3a845c50
+  adx_weblinksetid: dd6eb4e9-ea5d-ec11-8f8e-000d3a845c50
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 3
+  adx_displaypagechildlinks: false
+  adx_name: Careers at Cloudstrucc Inc.
+  adx_openinnewwindow: false
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: ad664011-eb5d-ec11-8f8e-000d3a845c50
+  adx_weblinksetid: dd6eb4e9-ea5d-ec11-8f8e-000d3a845c50

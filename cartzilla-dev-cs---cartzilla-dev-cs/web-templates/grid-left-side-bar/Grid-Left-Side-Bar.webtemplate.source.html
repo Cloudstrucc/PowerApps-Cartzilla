@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="page-heading">
+    {% block breadcrumbs %}
+      {% include 'Breadcrumbs' %}
+    {% endblock %}
+  {% block title %}
+    {% include 'Page Header' %}
+  {% endblock %}
+ </div>
+ <div id="mainContent" class="row">
+  <div class="col-md-12">
+    {% block header %}
+
+    {% endblock %}
+    
+    {% block sidebar %}
+        
+    {% endblock %}
+
+    {% block mainlist1 %}
+
+    {% endblock %}
+
+    {% block prominentproduct %}
+
+    {% endblock %}
+
+    {% block mainlist2 %}
+
+    {% endblock %}
+  </div>
+ </div>
+</div>

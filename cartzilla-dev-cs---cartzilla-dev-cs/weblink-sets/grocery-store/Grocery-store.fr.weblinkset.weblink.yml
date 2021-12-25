@@ -1,0 +1,33 @@
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 1
+  adx_displaypagechildlinks: false
+  adx_name: Product Catalog
+  adx_openinnewwindow: false
+  adx_pageid: 63eee8eb-8348-ec11-8c62-000d3ae89ecf
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 19fbb539-3551-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 7ea36627-3551-ec11-8f8e-000d3ae9a369
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 3
+  adx_displaypagechildlinks: false
+  adx_name: Checkout
+  adx_openinnewwindow: false
+  adx_pageid: 68c243aa-8448-ec11-8c62-000d3ae89ecf
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: c0d03954-3551-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 7ea36627-3551-ec11-8f8e-000d3ae9a369
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 2
+  adx_displaypagechildlinks: false
+  adx_name: Single Product Page
+  adx_openinnewwindow: false
+  adx_pageid: a89cd25c-8448-ec11-8c62-000d3ae89ecf
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: eeed4e47-3551-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 7ea36627-3551-ec11-8f8e-000d3ae9a369

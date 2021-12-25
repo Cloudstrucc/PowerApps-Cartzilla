@@ -1,0 +1,22 @@
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 2
+  adx_displaypagechildlinks: false
+  adx_name: List no Sidebar
+  adx_openinnewwindow: false
+  adx_pageid: 4643a6be-ed46-ec11-8c62-000d3ae89a77
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 2b8d5057-2051-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: ea78b127-2051-ec11-8f8e-000d3ae9a369
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 1
+  adx_displaypagechildlinks: false
+  adx_name: List with Sidebar
+  adx_openinnewwindow: false
+  adx_pageid: 81f40c53-ec46-ec11-8c62-000d3ae89a77
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: f818783d-2051-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: ea78b127-2051-ec11-8f8e-000d3ae9a369

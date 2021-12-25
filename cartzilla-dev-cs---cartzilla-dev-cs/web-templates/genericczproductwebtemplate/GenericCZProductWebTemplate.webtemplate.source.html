@@ -1,0 +1,20 @@
+
+{% fetchxml Product %}
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+  <entity name="product">
+    <attribute name="name" />
+    <attribute name="productid" />
+    <attribute name="productnumber" />
+    <attribute name="description" />
+    <attribute name="statecode" />
+    <attribute name="productstructure" />
+    <attribute name="clds_DetailImage" />
+    <attribute name="clds_SupportingDetailImage1" />
+    <attribute name="clds_SupportingDetailImage2" />
+
+    <order attribute="productnumber" descending="false" />
+  </entity>
+</fetch>
+{% endfetchxml %}
+
+{% include 'layout 1 column cartziall' query: Product %}

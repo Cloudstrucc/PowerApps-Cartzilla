@@ -1,0 +1,41 @@
+<div class="container p-5">
+    <h2>
+    Shipping rates & policies
+    </h2>
+    <div class="accordion" id="accordionExample">
+
+    {% fetchxml qa %}
+    <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+      <entity name="clds_shippingratesandpolicy">
+        <attribute name="clds_shippingratesandpolicyid" />
+        <order attribute="clds_name" descending="false" />
+        <filter type="and">
+            <condition attribute="createdon" operator="le" value='{{ "today" | date: "yyyy-MM-dd HH:mm:ss" }}' />
+        </filter>
+      </entity>
+    </fetch>
+    {% endfetchxml %}
+
+    {% for e in qa.results.entities %}
+    {% assign questionandanswer = entities['clds_shippingratesandpolicy'][e.clds_shippingratesandpolicyid] %}
+    {% assign questionId = questionandanswer.clds_question.id %}
+    {% assign answerId = questionandanswer.clds_answer.id %}
+    {% assign question = entities['adx_contentsnippet'][questionId].adx_value %}
+    {% assign answer = entities['adx_contentsnippet'][answerId].adx_value %}
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading{{ forloop.index }}">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ forloop.index }}" aria-expanded="true" aria-controls="collapse{{ forloop.index }}">
+            {{question}}
+          </button>
+        </h2>
+        <div id="collapse{{ forloop.index }}" class="accordion-collapse collapse hide" aria-labelledby="heading{{ forloop.index }}" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            {{answer}}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+     
+    </div>
+</div>

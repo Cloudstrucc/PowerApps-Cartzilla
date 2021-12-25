@@ -1,0 +1,22 @@
+{% assign query = "" %}
+
+{% if query != "" %}
+
+{% for item in query %}
+
+<div class="col-sm-6 mb-4">
+    <div class="card product-card-alt">
+    <div class="product-thumb border">
+        <div class="product-card-actions"><a href="/home-fashion-store-v2" class="btn btn-light btn-icon btn-shadow fs-base mx-2"><i class="ci-eye"></i></a><a href="https://themes.getbootstrap.com/product/cartzilla-bootstrap-e-commerce-template-ui-kit/" target="_blank" rel="noopener" class="btn btn-light btn-icon btn-shadow fs-base mx-2"><i class="ci-cart"></i></a></div><a href="/home-fashion-store-v2" class="product-thumb-overlay"></a><img src="{{query.img}}"" alt="Fashion Store v.2">
+    </div>
+    <div class="card-body text-center">
+        <h3 class="product-title fs-lg pt-2"><a href="/home-fashion-store-v2">query.cs_name</a></h3>
+    </div>
+    </div>
+</div>
+
+
+{% endfor %}
+
+
+{% endif %}

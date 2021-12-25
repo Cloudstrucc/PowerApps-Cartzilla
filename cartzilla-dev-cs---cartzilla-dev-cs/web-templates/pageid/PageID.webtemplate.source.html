@@ -1,0 +1,17 @@
+{% fetchxml my_query %}
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+  <entity name="adx_webpage">
+    <attribute name="adx_webpageid" />
+    <attribute name="clds_pageid" />
+    <attribute name="createdon" />
+    <order attribute="clds_pageid" descending="false" />
+    <filter type="and">
+      <condition attribute="adx_webpageid" operator="eq" uiname="{{page.name}}" uitype="adx_webpage" value="{{page.id}}" />
+      <condition attribute="createdon" operator="le" value='{{ "today" | date: "yyyy-MM-dd HH:mm:ss" }}' />
+    </filter>
+  </entity>
+</fetch>
+{% endfetchxml %}
+{% for result in my_query.results.entities %}
+{{ result.clds_pageid | escape }}
+ {% endfor %}

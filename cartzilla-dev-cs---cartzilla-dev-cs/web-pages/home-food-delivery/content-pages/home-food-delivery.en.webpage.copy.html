@@ -1,0 +1,255 @@
+<section class="bg-darker bg-size-cover bg-position-center py-5 py-lg-10" style="background-image: url(/resources/vendor/img/food-delivery/hero-bg.jpg);">
+        <div class="container pb-5">
+          <div class="row justify-content-center pb-5">
+            <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10 text-center">
+              <h5 class="text-light fw-light">#1 Food Delivery Service since 2010</h5>
+              <div class="h1 text-light mb-3 pb-4">We deliver your favorite food fresh &amp; fast in
+                <div class="dropdown d-inline-block ms-1"><a class="dropdown-toggle" href="#" data-bs-toggle="dropdown">New York</a>
+                  <div class="dropdown-menu dropdown-menu-end"><a class="dropdown-item fs-base" href="#">Los Angeles</a><a class="dropdown-item fs-base" href="#">Chicago</a><a class="dropdown-item fs-base" href="#">Houston</a><a class="dropdown-item fs-base" href="#">Philadelphia</a><a class="dropdown-item fs-base" href="#">San Diego</a><a class="dropdown-item fs-base" href="#">Miami</a></div>
+                </div>
+              </div><a class="btn btn-primary" href="#cuisine" data-scroll="">What do you want to eat?</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+{{ page.title }}</br>
+{{ page.id }}</br>
+
+
+{% assign webpages = entities['adx_webpage'][ {{page.id }}] | escape %}
+{{ webpage }} 
+
+
+
+{% if webpage %}
+Webpage</br>
+{{ webpage.name }} 
+{{ webpage }} 
+
+{% else %}
+Else Webpage</br>
+{% endif %}
+    <!-- Product grid (carousel)-->
+    <div class="col-md-7 pt-4 pt-md-0">
+      <div class="tns-carousel">
+        <div data-carousel-options="{&quot;nav&quot;: false, &quot;controlsContainer&quot;: &quot;#hoodie-day&quot;}" class="tns-carousel-inner">
+           <div>
+            <div class="row mx-n2">
+            </br>
+            </br>
+            </br>
+
+        {% entitylist fsmlist = name: 'Marketplace List Main' %}
+            {% entityview %}
+              page size {{ entityview.pages.size }}</br>
+              logical_name      {{ entityview.logical_name}}</br>
+              total records     {{ entityview.total_records }}</br>
+              Loaded entity view{{ entityview.name }}</br>
+            {% for e in entityview.records %}
+                {% assign c = entities['product'][e.id] %}
+          <!-- Carousel item-->
+        
+              <div class="col-lg-4 col-6 px-0 px-sm-2 mb-sm-4">
+                <div class="card product-card card-static"><button type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist" class="btn-wishlist btn-sm"><i class="ci-heart"></i></button><a href="/shop-single-v1/" class="card-img-top d-block overflow-hidden"><img src="https://cartzilla-dev-cs.crm3.dynamics.com/api/data/v9.0/products({{e.id}})/clds_thumbnail/$value" alt="Product"></a>
+                  <div class="card-body py-2"><a href="#" class="product-meta d-block fs-xs pb-1">Hoodies &amp; Sweatshirts</a>
+                    <h3 class="product-title fs-sm"><a href="/shop-single-v1/">{{ c.description }}</a></h3>
+                    <div class="d-flex justify-content-between">
+                      <div class="product-price"><span class="text-accent">${{ c.currentcost | round:2 }}</small></span></div>
+                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           {% endfor %}
+       {% endentityview %}
+       {% endentitylist %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+          <!-- Product grid (carousel)-->
+          <div class="col-md-7 pt-4 pt-md-0">
+            <div class="tns-carousel">
+              <div class="tns-carousel-inner" data-carousel-options="{&quot;nav&quot;: false, &quot;controlsContainer&quot;: &quot;#for-kids&quot;}">
+                {% assign listname = "Marketplace List Main" %}
+                {% assign viewname = "Marketplace" %}
+                {% include "product carousel" %}
+              </div>
+            </div>
+          </div>
+      <!-- Categories (cuisine) grid-->
+      <section class="container py-4 my-lg-3 py-sm-5" id="cuisine">
+        <h2 class="text-center pt-4 pt-sm-3">Trending food in your city</h2>
+        <p class="text-muted text-center mb-5">Choose what you want and we dilever it to you</p>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="/food-delivery-category/"><img class="card-img-top" src="/resources/vendor/img/food-delivery/category/01.jpg" alt="Burgers &amp; Fries">
+              <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">Burgers &amp; Fries</h3>
+              </div></a></div>
+          <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="/food-delivery-category/"><img class="card-img-top" src="/resources/vendor/img/food-delivery/category/02.jpg" alt="Noodles">
+              <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">Noodles</h3>
+              </div></a></div>
+          <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="/food-delivery-category/"><img class="card-img-top" src="/resources/vendor/img/food-delivery/category/03.jpg" alt="Sushi &amp; Rolls">
+              <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">Sushi &amp; Rolls</h3>
+              </div></a></div>
+          <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="/food-delivery-category/"><img class="card-img-top" src="/resources/vendor/img/food-delivery/category/04.jpg" alt="Pizza &amp; Pasta">
+              <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">Pizza &amp; Pasta</h3>
+              </div></a></div>
+          <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="/food-delivery-category/"><img class="card-img-top" src="/resources/vendor/img/food-delivery/category/05.jpg" alt="Coffee &amp; Desserts">
+              <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">Coffee &amp; Desserts</h3>
+              </div></a></div>
+          <div class="col-md-4 col-sm-6 mb-grid-gutter"><a class="card border-0 shadow" href="/food-delivery-category/"><img class="card-img-top" src="/resources/vendor/img/food-delivery/category/06.jpg" alt="Healthy &amp; Food">
+              <div class="card-body py-4 text-center">
+                <h3 class="h5 mt-1">Healthy &amp; Food</h3>
+              </div></a></div>
+        </div>
+      </section>
+      <!-- Mobile app CTA-->
+      <section class="bg-primary bg-size-cover bg-position-center pt-5" style="background-image: url(/resources/vendor/img/food-delivery/mobile-app-bg.jpg);">
+        <div class="container pt-2 pt-sm-0">
+          <div class="row align-items-center">
+            <div class="col-xl-4 col-lg-5 col-sm-6 offset-xl-2 offset-lg-1 mt-md-n5 text-center text-sm-start">
+              <h2 class="text-light mb-3">Order food on the go with Cartzilla App</h2>
+              <p class="text-light opacity-70 mb-0 d-block d-sm-none d-md-block">Pay with in app wallet, collect loyalty points, track your orders in real time and much more.</p>
+              <div class="mt-4 pt-2"><a class="btn-market btn-apple me-3 mb-2" href="#" role="button"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">App Store</span></a><a class="btn-market btn-google mb-2" href="#" role="button"><span class="btn-market-subtitle">Download on the</span><span class="btn-market-title">Google Play</span></a></div>
+            </div>
+            <div class="col-lg-5 col-sm-6 offset-lg-1 pt-5 pt-sm-3"><img class="d-block mx-auto mx-sm-0" src="/resources/vendor/img/food-delivery/phone.png" width="331" alt="Mobile App Screen"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Become Courier / Partner CTA-->
+      <section class="container pb-4 pt-lg-5 pb-sm-5">
+        <div class="row pt-4 mt-2 mt-lg-3 mb-md-2">
+          <div class="col-lg-6 mb-grid-gutter">
+            <div class="d-block d-sm-flex justify-content-between align-items-center bg-faded-info rounded-3">
+              <div class="pt-5 py-sm-5 px-4 ps-md-5 pe-md-0 text-center text-sm-start">
+                <h2>Become a Courier</h2>
+                <p class="text-muted pb-2">Earn competitive salary as delivery courier working flexible schedule.</p><a class="btn btn-primary" href="#">Start earning</a>
+              </div><img class="d-block mx-auto mx-sm-0" src="/resources/vendor/img/food-delivery/courier.png" width="272" alt="Become a Courier">
+            </div>
+          </div>
+          <div class="col-lg-6 mb-grid-gutter">
+            <div class="d-block d-sm-flex justify-content-between align-items-center bg-faded-warning rounded-3">
+              <div class="pt-5 py-sm-5 px-4 ps-md-5 pe-md-0 text-center text-sm-start">
+                <h2>Become a Partner</h2>
+                <p class="text-muted pb-2">Grow your business by reaching new customers.</p><a class="btn btn-primary" href="#">Partner with us</a>
+              </div><img class="d-block mx-auto mx-sm-0" src="/resources/vendor/img/food-delivery/chef.png" width="269" alt="Become a Partner">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Popular restaurants logo grid-->
+      <section class="container pb-4 pt-2 pt-sm-0 pt-md-2 pb-sm-5">
+        <h2 class="text-center">Popular restaurants in your city</h2>
+        <p class="text-muted pb-4 text-center">Check the best restaurants near you</p>
+        <div class="row pb-2 pb-sm-0 pb-md-3">
+          <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="/food-delivery-single/"><img class="d-block mx-auto" src="/resources/vendor/img/food-delivery/restaurants/logos/01.png" style="width: 150px;" alt="Brand"></a></div>
+          <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="/food-delivery-single/"><img class="d-block mx-auto" src="/resources/vendor/img/food-delivery/restaurants/logos/02.png" style="width: 150px;" alt="Brand"></a></div>
+          <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="/food-delivery-single/"><img class="d-block mx-auto" src="/resources/vendor/img/food-delivery/restaurants/logos/03.png" style="width: 150px;" alt="Brand"></a></div>
+          <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="/food-delivery-single/"><img class="d-block mx-auto" src="/resources/vendor/img/food-delivery/restaurants/logos/04.png" style="width: 150px;" alt="Brand"></a></div>
+          <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="/food-delivery-single/"><img class="d-block mx-auto" src="/resources/vendor/img/food-delivery/restaurants/logos/05.png" style="width: 150px;" alt="Brand"></a></div>
+          <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="/food-delivery-single/"><img class="d-block mx-auto" src="/resources/vendor/img/food-delivery/restaurants/logos/06.png" style="width: 150px;" alt="Brand"></a></div>
+          <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="/food-delivery-single/"><img class="d-block mx-auto" src="/resources/vendor/img/food-delivery/restaurants/logos/07.png" style="width: 150px;" alt="Brand"></a></div>
+          <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="/food-delivery-single/"><img class="d-block mx-auto" src="/resources/vendor/img/food-delivery/restaurants/logos/08.png" style="width: 150px;" alt="Brand"></a></div>
+          <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="/food-delivery-single/"><img class="d-block mx-auto" src="/resources/vendor/img/food-delivery/restaurants/logos/09.png" style="width: 150px;" alt="Brand"></a></div>
+          <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="/food-delivery-single/"><img class="d-block mx-auto" src="/resources/vendor/img/food-delivery/restaurants/logos/10.png" style="width: 150px;" alt="Brand"></a></div>
+          <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="/food-delivery-single/"><img class="d-block mx-auto" src="/resources/vendor/img/food-delivery/restaurants/logos/11.png" style="width: 150px;" alt="Brand"></a></div>
+          <div class="col-md-3 col-sm-4 col-6"><a class="d-block bg-white shadow-sm rounded-3 py-3 py-sm-4 mb-grid-gutter" href="/food-delivery-single/"><img class="d-block mx-auto" src="/resources/vendor/img/food-delivery/restaurants/logos/12.png" style="width: 150px;" alt="Brand"></a></div>
+        </div>
+      </section>
+      <!-- Reviews-->
+      <section class="bg-secondary py-5">
+        <div class="container py-md-4 pt-3 pb-0 py-sm-3">
+          <h2 class="text-center mb-4 mb-md-5">Customer reviews</h2>
+          <div class="tns-carousel mb-3">
+            <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: false, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;:20}, &quot;576&quot;:{&quot;items&quot;:2, &quot;gutter&quot;:20},&quot;850&quot;:{&quot;items&quot;:3, &quot;gutter&quot;:20},&quot;1080&quot;:{&quot;items&quot;:4, &quot;gutter&quot;:25}}}">
+              <blockquote class="mb-2">
+                <div class="card card-body fs-md text-muted border-0 shadow-sm">
+                  <div class="mb-2">
+                    <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                    </div>
+                  </div>Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <footer class="d-flex justify-content-center align-items-center pt-4"><img class="rounded-circle" src="/resources/vendor/img/testimonials/03.jpg" width="50" alt="Richard Davis">
+                  <div class="ps-3">
+                    <h6 class="fs-sm mb-n1">Richard Davis</h6><span class="fs-ms text-muted opacity-75">Feb 14, 2020</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="mb-2">
+                <div class="card card-body fs-md text-muted border-0 shadow-sm">
+                  <div class="mb-2">
+                    <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                    </div>
+                  </div>Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <footer class="d-flex justify-content-center align-items-center pt-4"><img class="rounded-circle" src="/resources/vendor/img/testimonials/04.jpg" width="50" alt="Laura Willson">
+                  <div class="ps-3">
+                    <h6 class="fs-sm mb-n1">Laura Willson</h6><span class="fs-ms text-muted opacity-75">Feb 05, 2020</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="mb-2">
+                <div class="card card-body fs-md text-muted border-0 shadow-sm">
+                  <div class="mb-2">
+                    <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i><i class="star-rating-icon ci-star"></i>
+                    </div>
+                  </div>Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <footer class="d-flex justify-content-center align-items-center pt-4"><img class="rounded-circle" src="/resources/vendor/img/testimonials/01.jpg" width="50" alt="Mary Grant">
+                  <div class="ps-3">
+                    <h6 class="fs-sm mb-n1">Mary Alice Grant</h6><span class="fs-ms text-muted opacity-75">Jan 27, 2020</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="mb-2">
+                <div class="card card-body fs-md text-muted border-0 shadow-sm">
+                  <div class="mb-2">
+                    <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                    </div>
+                  </div>Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <footer class="d-flex justify-content-center align-items-center pt-4"><img class="rounded-circle" src="/resources/vendor/img/shop/reviews/01.jpg" width="50" alt="Rafael Marquez">
+                  <div class="ps-3">
+                    <h6 class="fs-sm mb-n1">Rafael Marquez</h6><span class="fs-ms text-muted opacity-75">Dec 19, 2020</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="mb-2">
+                <div class="card card-body fs-md text-muted border-0 shadow-sm">
+                  <div class="mb-2">
+                    <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                    </div>
+                  </div>Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <footer class="d-flex justify-content-center align-items-center pt-4"><img class="rounded-circle" src="/resources/vendor/img/testimonials/02.jpg" width="50" alt="Adrian Lewis">
+                  <div class="ps-3">
+                    <h6 class="fs-sm mb-n1">Adrian Lewis</h6><span class="fs-ms text-muted opacity-75">Dec 13, 2020</span>
+                  </div>
+                </footer>
+              </blockquote>
+              <blockquote class="mb-2">
+                <div class="card card-body fs-md text-muted border-0 shadow-sm">
+                  <div class="mb-2">
+                    <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i><i class="star-rating-icon ci-star"></i>
+                    </div>
+                  </div>Lorem ipsum dolor sit amet, quia non consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+                <footer class="d-flex justify-content-center align-items-center pt-4"><img class="rounded-circle" src="/resources/vendor/img/shop/reviews/03.jpg" width="50" alt="Daniel Adams">
+                  <div class="ps-3">
+                    <h6 class="fs-sm mb-n1">Daniel Adams</h6><span class="fs-ms text-muted opacity-75">Dec 04, 2020</span>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>

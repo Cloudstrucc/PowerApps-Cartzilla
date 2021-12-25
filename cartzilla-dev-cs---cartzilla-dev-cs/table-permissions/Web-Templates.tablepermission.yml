@@ -1,0 +1,14 @@
+adx_append: true
+adx_appendto: true
+adx_create: true
+adx_delete: true
+adx_entitylogicalname: adx_webtemplate
+adx_entityname: Web Templates
+adx_entitypermission_webrole:
+- 08dd5181-d541-ec11-8c62-0022483be0c0
+- 09dd5181-d541-ec11-8c62-0022483be0c0
+- 2e4a9a7d-d541-ec11-8c62-0022483bead5
+adx_entitypermissionid: ae235bf8-6854-ec11-8f8e-000d3ae9ac38
+adx_read: true
+adx_scope: 756150000
+adx_write: true

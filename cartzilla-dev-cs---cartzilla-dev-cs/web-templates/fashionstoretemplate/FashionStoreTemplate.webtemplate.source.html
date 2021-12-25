@@ -1,0 +1,16 @@
+
+{% fetchxml myQuery %}
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+  <entity name="product">
+    <attribute name="name" />
+    <attribute name="productid" />
+    <attribute name="productnumber" />
+    <attribute name="description" />
+    <attribute name="statecode" />
+    <attribute name="productstructure" />
+    <order attribute="productnumber" descending="false" />
+  </entity>
+</fetch>
+{% endfetchxml %}
+
+{% include 'layout 1 column cartziall' query: myQuery %}

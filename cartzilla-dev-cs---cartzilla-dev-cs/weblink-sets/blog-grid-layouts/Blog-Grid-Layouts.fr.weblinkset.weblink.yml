@@ -1,0 +1,22 @@
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 1
+  adx_displaypagechildlinks: false
+  adx_name: Grid with Sidebar
+  adx_openinnewwindow: false
+  adx_pageid: 50bc13b3-ee46-ec11-8c62-000d3ae89a77
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 3c2ac716-2651-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 5aaec7f8-2551-ec11-8f8e-000d3ae9a369
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 2
+  adx_displaypagechildlinks: false
+  adx_name: Grid no Sidebar
+  adx_openinnewwindow: false
+  adx_pageid: e40946a6-ef46-ec11-8c62-000d3ae89a77
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 6023d628-2651-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 5aaec7f8-2551-ec11-8f8e-000d3ae9a369

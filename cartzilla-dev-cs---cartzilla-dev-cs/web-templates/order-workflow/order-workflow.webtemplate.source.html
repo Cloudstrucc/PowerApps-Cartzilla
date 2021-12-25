@@ -1,0 +1,49 @@
+<script src="/Resources/Vendor/js/process.js"></script>
+
+<!--Load Entity Form-->
+
+<script>
+var entity = {
+
+ "EntityId": reportingRecords[j].id
+
+ };
+
+ var WorkflowId = "4883a19c-ea83-46ed-a73e-a3bd400e51c8";
+
+ var req = new XMLHttpRequest();
+
+ req.open("POST", Xrm.Page.context.getClientUrl() + "/api/data/v9.0/workflows(" + WorkflowId + ")/Microsoft.Dynamics.CRM.ExecuteWorkflow", true);
+
+ req.setRequestHeader("OData-MaxVersion", "4.0");
+
+ req.setRequestHeader("OData-Version", "4.0");
+
+ req.setRequestHeader("Accept", "application/json");
+
+ req.setRequestHeader("Content-Type", "application/json; charset=utf-8");
+
+ req.onreadystatechange = function () {
+
+ if (this.readyState === 4) {
+
+ req.onreadystatechange = null;
+
+ if (this.status === 200) {
+
+ console.log("Success");
+
+ } else {
+
+ Xrm.Utility.alertDialog(this.statusText);
+
+ console.log("Failed");
+
+ }
+
+ }
+
+ };
+
+ req.send(JSON.stringify(entity));
+</script>

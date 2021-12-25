@@ -1,0 +1,76 @@
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 3
+  adx_displaypagechildlinks: false
+  adx_name: Shop Grid - Filters on Top
+  adx_openinnewwindow: false
+  adx_pageid: e774225b-f89c-4d22-b980-6752761fb182
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 02abdba4-2d51-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 5c08f0fe-2c51-ec11-8f8e-000d3ae9a369
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 1
+  adx_displaypagechildlinks: false
+  adx_name: Shop Grid - Left Sidebar
+  adx_openinnewwindow: false
+  adx_pageid: c774d647-3246-ec11-8c62-000d3ae89ecf
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 3456af0c-2d51-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 5c08f0fe-2c51-ec11-8f8e-000d3ae9a369
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 2
+  adx_displaypagechildlinks: false
+  adx_name: Shop Grid - Right Sidebar
+  adx_openinnewwindow: false
+  adx_pageid: e7d74cf6-ee46-ec11-8c62-000d3ae89a77
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 50f8ea98-2d51-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 5c08f0fe-2c51-ec11-8f8e-000d3ae9a369
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 5
+  adx_displaypagechildlinks: false
+  adx_name: Shop List - Right Sidebar
+  adx_openinnewwindow: false
+  adx_pageid: caa93e52-f446-ec11-8c62-000d3ae89a77
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 525d9bda-2d51-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 5c08f0fe-2c51-ec11-8f8e-000d3ae9a369
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 4
+  adx_displaypagechildlinks: false
+  adx_name: Shop List - Left Sidebar
+  adx_openinnewwindow: false
+  adx_pageid: c5d66bdd-f246-ec11-8c62-000d3ae89a77
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 5a1cbabf-2d51-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 5c08f0fe-2c51-ec11-8f8e-000d3ae9a369
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displaypagechildlinks: false
+  adx_name: A Shop Grid - Left Sidebar
+  adx_openinnewwindow: false
+  adx_pageid: d96ee94b-8c62-ec11-8f8e-000d3a847292
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: b7722a86-8c62-ec11-8f8e-000d3a847292
+  adx_weblinksetid: 5c08f0fe-2c51-ec11-8f8e-000d3ae9a369
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 6
+  adx_displaypagechildlinks: false
+  adx_name: Shop List - Filters on Top
+  adx_openinnewwindow: false
+  adx_pageid: bd3470ce-f446-ec11-8c62-000d3ae89a77
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: cea82cee-2d51-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 5c08f0fe-2c51-ec11-8f8e-000d3ae9a369

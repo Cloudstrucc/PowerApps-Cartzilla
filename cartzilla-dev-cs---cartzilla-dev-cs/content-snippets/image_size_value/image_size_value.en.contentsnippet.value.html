@@ -1,0 +1,9 @@
+{% if image_size == "large" %}
+    {% assign image_size_value = "100000000" %}
+{% elsif image_size == "medium" %}
+    {% assign image_size_value = "100000001" %}
+{% elsif image_size == "small" %}
+    {% assign image_size-value = "100000002" %}
+{% else %}
+No value found for image_size
+{% endif %}

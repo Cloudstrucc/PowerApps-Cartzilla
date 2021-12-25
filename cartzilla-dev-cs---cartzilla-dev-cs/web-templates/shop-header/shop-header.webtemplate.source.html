@@ -1,0 +1,365 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cartzilla | Shop</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Cartzilla - Bootstrap E-commerce Template">
+    <meta name="keywords" content="bootstrap, shop, e-commerce, market, modern, responsive,  business, mobile, bootstrap, html5, css3, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/vendor/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/vendor/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/vendor/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" color="#fe6a6a" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="/resources/vendor/css/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="/resources/vendor/css/tiny-slider.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="/resources/vendor/css/theme.min.css"/>
+  </head>
+  <!-- Body-->
+  <body class="handheld-toolbar-enabled">
+    <!-- Sign in / sign up modal-->
+    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-secondary">
+            <ul class="nav nav-tabs card-header-tabs" role="tablist">
+              <li class="nav-item"><a class="nav-link fw-medium active" href="#signin-tab" data-bs-toggle="tab" role="tab" aria-selected="true"><i class="ci-unlocked me-2 mt-n1"></i>Sign in</a></li>
+              <li class="nav-item"><a class="nav-link fw-medium" href="#signup-tab" data-bs-toggle="tab" role="tab" aria-selected="false"><i class="ci-user me-2 mt-n1"></i>Sign up</a></li>
+            </ul>
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body tab-content py-4">
+            <form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
+              <div class="mb-3">
+                <label class="form-label" for="si-email">Email address</label>
+                <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="si-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="si-password" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3 d-flex flex-wrap justify-content-between">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="si-remember">
+                  <label class="form-check-label" for="si-remember">Remember me</label>
+                </div><a class="fs-sm" href="#">Forgot password?</a>
+              </div>
+              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign in</button>
+            </form>
+            <form class="needs-validation tab-pane fade" autocomplete="off" novalidate id="signup-tab">
+              <div class="mb-3">
+                <label class="form-label" for="su-name">Full name</label>
+                <input class="form-control" type="text" id="su-name" placeholder="John Doe" required>
+                <div class="invalid-feedback">Please fill in your name.</div>
+              </div>
+              <div class="mb-3">
+                <label for="su-email">Email address</label>
+                <input class="form-control" type="email" id="su-email" placeholder="johndoe@example.com" required>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="su-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="su-password" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="su-password-confirm">Confirm password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="su-password-confirm" required>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"><span class="password-toggle-indicator"></span>
+                  </label>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <!-- Navbar for Food Delivery Service demo-->
+      <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+        <div class="navbar-sticky bg-light">
+          <div class="navbar navbar-expand-lg navbar-light">
+            <div class="container"><a class="navbar-brand d-none d-sm-block flex-shrink-0" href="/"><img src="/resources/vendor/img/logo-dark.png" width="142" alt="Cartzilla"></a><a class="navbar-brand d-sm-none flex-shrink-0 me-2" href="/"><img src="/resources/vendor/img/logo-icon.png" width="74" alt="Cartzilla"></a>
+              <div class="input-group d-none d-lg-flex mx-4">
+                <input class="form-control rounded-end pe-5" type="text" placeholder="Search for products"><i class="ci-search position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3"></i>
+              </div>
+              <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><span class="navbar-toggler-icon"></span></button><a class="navbar-tool navbar-stuck-toggler" href="/#"><span class="navbar-tool-tooltip">Expand menu</span>
+                  <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-menu"></i></div></a><a class="navbar-tool d-none d-lg-flex" href="/account-wishlist"><span class="navbar-tool-tooltip">Wishlist</span>
+                  <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-heart"></i></div></a><a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" href="/#signin-modal" data-bs-toggle="modal">
+
+{% include 'My Account'%}
+
+                <div class="navbar-tool"><a class="navbar-tool-icon-box bg-secondary" href="/shop-cart"><span class="navbar-tool-label">4</span><i class="navbar-tool-icon ci-cart"></i></a><a class="navbar-tool-text" href="/shop-cart"><small>My Cart</small>$265.00</a>
+                  <!-- Cart dropdown-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navbar navbar-expand-lg navbar-light navbar-stuck-menu mt-n2 pt-0 pb-2">
+            <div class="container">
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Search-->
+                <div class="input-group d-lg-none my-3"><i class="ci-search position-absolute top-50 start-0 translate-middle-y text-muted fs-base ms-3"></i>
+                  <input class="form-control rounded-start" type="text" placeholder="Search for products">
+                </div>
+                <!-- Departments menu-->
+                <ul class="navbar-nav navbar-mega-nav pe-lg-2 me-lg-2">
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-lg-0" href="/#" data-bs-toggle="dropdown"><i class="ci-view-grid me-2"></i>Departments</a>
+                    <div class="dropdown-menu px-2 pb-4">
+                      <div class="d-flex flex-wrap flex-sm-nowrap">
+                        <div class="mega-dropdown-column pt-3 pt-sm-4 px-2 px-lg-3">
+                          <div class="widget widget-links"><a class="d-block overflow-hidden rounded-3 mb-3" href="/#"><img src="/resources/vendor/img/shop/departments/01.jpg" alt="Clothing"></a>
+                            <h6 class="fs-base mb-2">Clothing</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Women's clothing</a></li>
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Men's clothing</a></li>
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Kid's clothing</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mega-dropdown-column pt-4 px-2 px-lg-3">
+                          <div class="widget widget-links"><a class="d-block overflow-hidden rounded-3 mb-3" href="/#"><img src="/resources/vendor/img/shop/departments/02.jpg" alt="Shoes"></a>
+                            <h6 class="fs-base mb-2">Shoes</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Women's shoes</a></li>
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Men's shoes</a></li>
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Kid's shoes</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mega-dropdown-column pt-4 px-2 px-lg-3">
+                          <div class="widget widget-links"><a class="d-block overflow-hidden rounded-3 mb-3" href="/#"><img src="/resources/vendor/img/shop/departments/03.jpg" alt="Gadgets"></a>
+                            <h6 class="fs-base mb-2">Gadgets</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Smartphones &amp; Tablets</a></li>
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Wearable gadgets</a></li>
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">E-book readers</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-wrap flex-sm-nowrap">
+                        <div class="mega-dropdown-column pt-4 px-2 px-lg-3">
+                          <div class="widget widget-links"><a class="d-block overflow-hidden rounded-3 mb-3" href="/#"><img src="/resources/vendor/img/shop/departments/04.jpg" alt="Furniture"></a>
+                            <h6 class="fs-base mb-2">Furniture &amp; Decor</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Home furniture</a></li>
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Office furniture</a></li>
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Lighting and decoration</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mega-dropdown-column pt-4 px-2 px-lg-3">
+                          <div class="widget widget-links"><a class="d-block overflow-hidden rounded-3 mb-3" href="/#"><img src="/resources/vendor/img/shop/departments/05.jpg" alt="Accessories"></a>
+                            <h6 class="fs-base mb-2">Accessories</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Hats</a></li>
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Sunglasses</a></li>
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Bags</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mega-dropdown-column pt-4 px-2 px-lg-3">
+                          <div class="widget widget-links"><a class="d-block overflow-hidden rounded-3 mb-3" href="/#"><img src="/resources/vendor/img/shop/departments/06.jpg" alt="Entertainment"></a>
+                            <h6 class="fs-base mb-2">Entertainment</h6>
+                            <ul class="widget-list">
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Kid's toys</a></li>
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Video games</a></li>
+                              <li class="widget-list-item mb-1"><a class="widget-list-link" href="/#">Outdoor / Camping</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <!-- Primary menu-->
+                <ul class="navbar-nav">
+                    {% assign homenav = weblinks["Home Cartzilla Navigation"] %}
+                    {% if homenav %}
+                    <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                      <ul class="dropdown-menu">
+                        {% for link in homenav.weblinks %}
+                        <li class="dropdown position-static mb-0"><a class="widget-list-item py-2 border-bottom" href="{{ link.url | escape }}"><span class="d-block text-heading">{{ link.name | escape }}</span><small class="d-block text-muted">{{ link.crc98_display_description }}</small></a>
+                          <div class="dropdown-menu h-100 animation-none mt-0 p-3"><a class="d-block" href="{{ link.url | escape }}" style="width: 250px;"><img src="{{ link.crc98_display_picture_path }}" alt="{{ link.name | escape }}"></a></div>
+                        </li>
+                        {% endfor %}
+                      </ul>
+                    </li>
+                    {% endif %}
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop</a>
+                      <div class="dropdown-menu p-0">
+                        <div class="d-flex flex-wrap flex-sm-nowrap px-2">
+                          <div class="mega-dropdown-column pt-1 pt-lg-4 pb-4 px-2 px-lg-3">
+                            <div class="widget widget-links mb-4">
+                              <h6 class="fs-base mb-3">Shop layouts</h6>
+                              <ul class="widget-list">
+                          {% assign shoplayoutsnav = weblinks["Shop layouts"]  %}
+                          {% if shoplayoutsnav %}
+                              {% for link in shoplayoutsnav.weblinks %}
+                               <li class="dropdown position-static mb-0"><a class="widget-list-item py-2 border-bottom" href="{{ link.url | escape }}"><span class="d-block text-heading">{{ link.name | escape }}</span></a>
+                              {% endfor %}
+                          </ul>
+                        {% endif %}
+                            </div>
+                            <div class="widget widget-links">
+                              <h6 class="fs-base mb-3">Marketplace</h6>
+                              <ul class="widget-list">
+                                {% assign marketpalcenav = weblinks["Marketplace"]  %}
+                                {% if marketpalcenav %}
+                                    {% for link in marketpalcenav.weblinks %}
+                                     <li class="dropdown position-static mb-0"><a class="widget-list-item py-2 border-bottom" href="{{ link.url | escape }}"><span class="d-block text-heading">{{ link.name | escape }}</span></a>
+                                    {% endfor %}
+                                </ul>
+                              {% endif %}
+                            </div>
+                          </div>
+                          <div class="mega-dropdown-column pt-1 pt-lg-4 pb-4 px-2 px-lg-3">
+                            <div class="widget widget-links">
+                              <h6 class="fs-base mb-3">Shop pages</h6>
+                              <ul class="widget-list">
+                                
+                                  {% assign shoppagesnav = weblinks["Shop pages"]  %}
+                                  {% if shoppagesnav %}
+                                      {% for link in shoppagesnav.weblinks %}
+                                       <li class="dropdown position-static mb-0"><a class="widget-list-item py-2 border-bottom" href="{{ link.url | escape }}"><span class="d-block text-heading">{{ link.name | escape }}</span></a>
+                                      {% endfor %}
+                                  </ul>
+                                {% endif %}
+                             </div>
+                          </div>
+                          <div class="mega-dropdown-column pt-1 pt-lg-4 pb-4 px-2 px-lg-3">
+                            <div class="widget widget-links mb-4">
+                              <h6 class="fs-base mb-3">Grocery store</h6>
+                              <ul class="widget-list">
+                                {% assign grocerystorenav = weblinks["Grocery store"]  %}
+                                {% if grocerystorenav %}
+                                    {% for link in grocerystorenav.weblinks %}
+                                     <li class="dropdown position-static mb-0"><a class="widget-list-item py-2 border-bottom" href="{{ link.url | escape }}"><span class="d-block text-heading">{{ link.name | escape }}</span></a>
+                                    {% endfor %}
+                                </ul>
+                              {% endif %}
+                            </div>
+                            <div class="widget widget-links">
+                              <h6 class="fs-base mb-3">Food Delivery</h6>
+                              <ul class="widget-list">
+                                {% assign fooddeliverynav = weblinks["Food Delivery"]  %}
+                                {% if fooddeliverynav %}
+                                    {% for link in fooddeliverynav.weblinks %}
+                                     <li class="dropdown position-static mb-0"><a class="widget-list-item py-2 border-bottom" href="{{ link.url | escape }}"><span class="d-block text-heading">{{ link.name | escape }}</span></a>
+                                    {% endfor %}
+                                </ul>
+                              {% endif %}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    {% assign accountnav = weblinks["Account Cartzilla Navigation"] %}
+                    {% if accountnav %}
+                    <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="widget-list-item" href="{% if user %}
+                                                                  {% if homeurl%}/{{ homeurl }}
+                                                                  {% endif %}
+                                                                  {{ website.sign_out_url_substitution }}
+                                                              {% else %}/SignIn/{% endif %}"><span class="d-block text-heading">
+                                                              {% if user %}Account Signout{% else %}Account Signin{% endif %}</span><small class="d-block text-muted"></small></a>
+                        </li>
+                        {% for link in accountnav.weblinks %}
+                        <li><a class="widget-list-item" href="{{ link.url| escape }}"><span class="d-block text-heading">{{ link.name | escape }}</span><small class="d-block text-muted">{{ link.crc98_display_description }}</small></a>
+                        </li>
+                        {% endfor %}
+                      </ul>
+                    </li>
+                    {% endif %}
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Pages</a>
+                      <ul class="dropdown-menu">
+                      
+                        <li><a class="dropdown-item" href="/about/">About Us</a></li>
+                        <li><a class="dropdown-item" href="/contacts/">Contacts</a></li>
+                        {% assign helpcenternav = weblinks["Help Center"]  %}
+                        {% if helpcenternav %}
+                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Help Center</a>
+                          <ul class="dropdown-menu">
+                            {% for link in helpcenternav.weblinks %}
+                            <li class="dropdown position-static mb-0"><a class="widget-list-item py-2 border-bottom" href="{{ link.url | escape }}"><span class="d-block text-heading">{{ link.name | escape }}</span></a>
+                            {% endfor %}
+                          </ul>
+                        </li>
+                        {% endif %}
+
+                        {% assign helpcenternav = weblinks["404 Not Found"]  %}
+                        {% if helpcenternav %}
+                        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">404 Not Found</a>
+                          <ul class="dropdown-menu">
+                            {% for link in helpcenternav.weblinks %}
+                            <li class="dropdown position-static mb-0"><a class="widget-list-item py-2 border-bottom" href="{{ link.url | escape }}"><span class="d-block text-heading">{{ link.name | escape }}</span></a>
+                            {% endfor %}
+                          </ul>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Blog</a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="/#" data-bs-toggle="dropdown">Blog List Layouts</a>
+                        <ul class="dropdown-menu">
+                          {% assign bloglistlayoutsnav = weblinks["Blog List Layouts"]  %}
+                          {% if bloglistlayoutsnav %}
+                              {% for link in bloglistlayoutsnav.weblinks %}
+                               <li class="dropdown position-static mb-0"><a class="widget-list-item py-2 border-bottom" href="{{ link.url | escape }}"><span class="d-block text-heading">{{ link.name | escape }}</span></a>
+                              {% endfor %}
+                            </ul>
+                        {% endif %}  
+                       </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="/#" data-bs-toggle="dropdown">Blog Grid Layouts</a>
+                        <ul class="dropdown-menu">
+                          {% assign bloggridlayoutsnav = weblinks["Blog Grid Layouts"]  %}
+                          {% if bloggridlayoutsnav %}
+                              {% for link in bloggridlayoutsnav.weblinks %}
+                               <li class="dropdown position-static mb-0"><a class="widget-list-item py-2 border-bottom" href="{{ link.url | escape }}"><span class="d-block text-heading">{{ link.name | escape }}</span></a>
+                              {% endfor %}
+                          </ul>
+                        {% endif %}  
+                      </li>
+                      <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="/#" data-bs-toggle="dropdown">Single Post Layouts</a>
+                        <ul class="dropdown-menu">
+                          {% assign singlepostlayoutsnav = weblinks["Single Post Layouts"]  %}
+                          {% if singlepostlayoutsnav %}
+                              {% for link in singlepostlayoutsnav.weblinks %}
+                              <li class="dropdown position-static mb-0"><a class="widget-list-item py-2 border-bottom" href="{{ link.url | escape }}"><span class="d-block text-heading">{{ link.name | escape }}</span></a>
+                              {% endfor %}
+                          </ul>
+                        {% endif %}  
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </header>

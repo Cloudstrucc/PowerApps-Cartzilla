@@ -1,0 +1,22 @@
+<section class="page_section section-landing">
+  <div id="mainContent" class="container">
+    <div class="row ">
+      <div class="col-md-12">
+        <h1 class="section-landing-heading">{% editable snippets 'Home/Title' type: 'text' tag: 'span' %}</h1>
+        <h2 class="section-landing-sub-heading">{% editable snippets 'Home/Subtitle' type: 'text' tag: 'span' %}</h2>
+        {% include 'Search' search_id:'search_control' %}
+      </div>
+    </div>
+  </div>
+  <div class="layer_down">&nbsp;</div>
+</section>
+
+<section class="page_section">
+  <div class="layer_up">&nbsp;</div>
+  <div class="container">
+    <div class="content-home">
+      <h2 class="blue_border">{% editable snippets "Home/Heading" type: 'text' tag: 'span' %}</h2>
+      {% include 'Page Copy' %}
+    </div>
+  </div>
+</section>

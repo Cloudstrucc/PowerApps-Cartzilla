@@ -1,0 +1,50 @@
+<head>
+<script src="/Resources/Vendor/js/jquery-3.6.0.min.js"></script>
+</head
+<!--Load Entity Form-->
+
+<script>
+var createApplicationURL = '{{settings['Stay Informed (create lead record email)']}}';
+var createApplicationButton = $("<input type='button' id='btnCreateApplication' value='Subscribe*' class='btn btn-primary'/>");
+$(".subscription-status").before(createApplicationButton);
+
+$("document").ready(function(){
+    $("#btnCreateApplication").on("click",function(){
+        createApplicationHandler();
+    });
+});
+
+function createApplicationHandler(){
+    loadCreateApplicationModal();
+    $("#createApplicationModal").css("display","block");
+    $("div.fade",parent.document).addClass("in");
+    $("div.fade.in",parent.document).addClass("modal-backdrop");
+}
+
+function loadCreateApplicationModal(){
+    var createAppURL = createApplicationURL;
+    var $modal = $("#createApplicationModal");
+    var $iFrame = $modal.find("iframe");
+    $iFrame.prop('src', createAppURL);
+
+    
+    $modal.modal();
+}
+
+</script>
+<section id="createApplicationModal" aria-hidden="true" aria-label="<span class='fa fa-info-circle' aria-hidden='true'></span> My Modal Title" class="modal-form modal-form-details" data-backdrop="static" role="dialog" tabindex="-1" style="display: none;">
+    <div class="modal-dialog" style="width: 450px;">
+        <div class="modal-content">
+            <div class="modal-header">
+            </div>
+            <div class="modal-body">
+                <div class="form-loading" style="display: none;">
+                    <span class="fa fa-spinner fa-spin fa-4x" aria-hidden="true"></span>
+                </div>
+                <p><h2>Subscribe to our Newsletter</h2></p>
+                <p><h6>Please enter your email below:</h6></p>
+                <iframe id="createApplicationModal" src="" style="height: 347px;"></iframe>
+            </div>
+        </div>
+    </div>
+</section>

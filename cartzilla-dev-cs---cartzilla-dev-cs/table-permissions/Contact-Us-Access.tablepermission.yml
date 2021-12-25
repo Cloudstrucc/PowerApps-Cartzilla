@@ -1,0 +1,13 @@
+adx_append: false
+adx_appendto: false
+adx_create: true
+adx_delete: false
+adx_entitylogicalname: lead
+adx_entityname: Contact Us Access
+adx_entitypermission_webrole:
+- 08dd5181-d541-ec11-8c62-0022483be0c0
+- 09dd5181-d541-ec11-8c62-0022483be0c0
+adx_entitypermissionid: e8499a7d-d541-ec11-8c62-0022483bead5
+adx_read: false
+adx_scope: 756150000
+adx_write: true

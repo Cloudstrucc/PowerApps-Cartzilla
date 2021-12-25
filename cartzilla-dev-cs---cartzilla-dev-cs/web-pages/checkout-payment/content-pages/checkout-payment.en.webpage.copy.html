@@ -1,0 +1,152 @@
+<div class="page-title-overlap bg-dark pt-4">
+  <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+    <div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
+          <li class="breadcrumb-item"><a href="/" class="text-nowrap"><i class="ci-home"></i>Home</a></li>
+          <li class="breadcrumb-item text-nowrap"><a href="/shop-grid-ls/">Shop</a></li>
+          <li aria-current="page" class="breadcrumb-item text-nowrap active">Checkout</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
+      <h1 class="h3 text-light mb-0">Checkout</h1>
+    </div>
+  </div>
+</div>
+<div class="container pb-5 mb-2 mb-md-4">
+  <div class="row">
+    <section class="col-lg-8">
+
+      <!-- Steps-->
+      <div class="steps steps-light pt-2 pb-3 mb-5"><a href="/shop-cart/" class="step-item active">
+          <div class="step-progress"><span class="step-count">1</span></div>
+          <div class="step-label"><i class="ci-cart"></i>Cart</div>
+        </a><a href="/checkout-details/" class="step-item active">
+          <div class="step-progress"><span class="step-count">2</span></div>
+          <div class="step-label"><i class="ci-user-circle"></i>Details</div>
+        </a><a href="/checkout-shipping/" class="step-item active">
+          <div class="step-progress"><span class="step-count">3</span></div>
+          <div class="step-label"><i class="ci-package"></i>Shipping</div>
+        </a><a href="/checkout-payment/" class="step-item active current">
+          <div class="step-progress"><span class="step-count">4</span></div>
+          <div class="step-label"><i class="ci-card"></i>Payment</div>
+        </a><a href="/checkout-review/" class="step-item">
+          <div class="step-progress"><span class="step-count">5</span></div>
+          <div class="step-label"><i class="ci-check-circle"></i>Review</div>
+        </a></div>
+<!-- Payment methods accordion-->
+      <h2 class="h6 pb-3 mb-2">Choose payment method</h2>
+      <div id="payment-method" class="accordion mb-2">
+        <div class="accordion-item">
+          <h3 class="accordion-header"><a href="#card" data-bs-toggle="collapse" class="accordion-button"><i class="ci-card fs-lg me-2 mt-n1 align-middle"></i>Pay with Credit Card</a></h3>
+          <div id="card" data-bs-parent="#payment-method" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <p class="fs-sm"><span>We accept following credit cards:&nbsp;&nbsp;</span><img src="/resources/vendor/img/cards.png" width="187" alt="Cerdit Cards" class="d-inline-block align-middle"></p>
+              <div class="credit-card-wrapper"></div>
+              <form class="credit-card-form row">
+                <div class="mb-3 col-sm-6"><input type="text" name="number" placeholder="Card Number" required="" class="form-control"></div>
+                <div class="mb-3 col-sm-6"><input type="text" name="name" placeholder="Full Name" required="" class="form-control"></div>
+                <div class="mb-3 col-sm-3"><input type="text" name="expiry" placeholder="MM/YY" required="" class="form-control"></div>
+                <div class="mb-3 col-sm-3"><input type="text" name="cvc" placeholder="CVC" required="" class="form-control"></div>
+                <div class="col-sm-6"><button type="submit" class="btn btn-outline-primary d-block w-100 mt-0">Submit</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header"><a href="#paypal" data-bs-toggle="collapse" class="accordion-button collapsed"><i class="ci-paypal me-2 align-middle"></i>Pay with PayPal</a></h3>
+          <div id="paypal" data-bs-parent="#payment-method" class="accordion-collapse collapse">
+            <div class="accordion-body fs-sm">
+              <p><span class="fw-medium">PayPal</span> - the safer, easier way to pay</p>
+              <form method="post" novalidate="" class="row needs-validation">
+                <div class="col-sm-6">
+                  <div class="mb-3"><input type="email" placeholder="E-mail" required="" class="form-control">
+                    <div class="invalid-feedback">Please enter valid email address</div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-3"><input type="password" placeholder="Password" required="" class="form-control">
+                    <div class="invalid-feedback">Please enter your password</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center"><a href="#" class="nav-link-style">Forgot password?</a><button type="submit" class="btn btn-primary">Log In</button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header"><a href="#points" data-bs-toggle="collapse" class="accordion-button collapsed"><i class="ci-gift me-2"></i>Redeem Reward Points</a></h3>
+          <div id="points" data-bs-parent="#payment-method" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>You currently have<span class="fw-medium">&nbsp;384</span>&nbsp;Reward Points to spend.</p>
+              <div class="form-check d-block"><input type="checkbox" id="use_points" class="form-check-input"><label for="use_points" class="form-check-label">Use my Reward Points to pay for this order.</label></div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Navigation (desktop)-->
+      <div class="d-none d-lg-flex pt-4">
+        <div class="w-50 pe-3"><a href="/checkout-shipping/" class="btn btn-secondary d-block w-100"><i class="ci-arrow-left mt-sm-0 me-1"></i><span class="d-none d-sm-inline">Back to Shipping</span><span class="d-inline d-sm-none">Back</span></a></div>
+        <div class="w-50 ps-2"><a href="/checkout-review/" class="btn btn-primary d-block w-100"><span class="d-none d-sm-inline">Review your order</span><span class="d-inline d-sm-none">Review order</span><i class="ci-arrow-right mt-sm-0 ms-1"></i></a></div>
+      </div>
+    </section>
+<!-- Sidebar-->
+    <aside class="col-lg-4 pt-4 pt-lg-0 ps-xl-5">
+      <div class="bg-white rounded-3 shadow-lg p-4 ms-lg-auto">
+        <div class="py-2 px-xl-2">
+          <div class="widget mb-3">
+            <h2 class="widget-title text-center">Order summary</h2>
+            <div class="d-flex align-items-center pb-2 border-bottom"><a href="/shop-single-v1/" class="d-block flex-shrink-0"><img src="/resources/vendor/img/shop/cart/widget/01.jpg" width="64" alt="Product"></a>
+              <div class="ps-2">
+                <h6 class="widget-product-title"><a href="/shop-single-v1/">Women Colorblock Sneakers</a></h6>
+                <div class="widget-product-meta"><span class="text-accent me-2">$150.<small>00</small></span><span class="text-muted">x 1</span></div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center py-2 border-bottom"><a href="/shop-single-v1/" class="d-block flex-shrink-0"><img src="/resources/vendor/img/shop/cart/widget/02.jpg" width="64" alt="Product"></a>
+              <div class="ps-2">
+                <h6 class="widget-product-title"><a href="/shop-single-v1/">TH Jeans City Backpack</a></h6>
+                <div class="widget-product-meta"><span class="text-accent me-2">$79.<small>50</small></span><span class="text-muted">x 1</span></div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center py-2 border-bottom"><a href="/shop-single-v1/" class="d-block flex-shrink-0"><img src="/resources/vendor/img/shop/cart/widget/03.jpg" width="64" alt="Product"></a>
+              <div class="ps-2">
+                <h6 class="widget-product-title"><a href="/shop-single-v1/">3-Color Sun Stash Hat</a></h6>
+                <div class="widget-product-meta"><span class="text-accent me-2">$22.<small>50</small></span><span class="text-muted">x 1</span></div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center py-2 border-bottom"><a href="/shop-single-v1/" class="d-block flex-shrink-0"><img src="/resources/vendor/img/shop/cart/widget/04.jpg" width="64" alt="Product"></a>
+              <div class="ps-2">
+                <h6 class="widget-product-title"><a href="/shop-single-v1/">Cotton Polo Regular Fit</a></h6>
+                <div class="widget-product-meta"><span class="text-accent me-2">$9.<small>00</small></span><span class="text-muted">x 1</span></div>
+              </div>
+            </div>
+          </div>
+          <ul class="list-unstyled fs-sm pb-2 border-bottom">
+            <li class="d-flex justify-content-between align-items-center"><span class="me-2">Subtotal:</span><span class="text-end">$265.<small>00</small></span></li>
+            <li class="d-flex justify-content-between align-items-center"><span class="me-2">Shipping:</span><span class="text-end">—</span></li>
+            <li class="d-flex justify-content-between align-items-center"><span class="me-2">Taxes:</span><span class="text-end">$9.<small>50</small></span></li>
+            <li class="d-flex justify-content-between align-items-center"><span class="me-2">Discount:</span><span class="text-end">—</span></li>
+          </ul>
+          <h3 class="fw-normal text-center my-4">$274.<small>50</small></h3>
+          <form method="post" novalidate="" class="needs-validation">
+            <div class="mb-3"><input type="text" placeholder="Promo code" required="" class="form-control">
+              <div class="invalid-feedback">Please provide promo code.</div>
+            </div><button type="submit" class="btn btn-outline-primary d-block w-100">Apply promo code</button>
+          </form>
+        </div>
+      </div>
+    </aside>
+  </div>
+<!-- Navigation (mobile)-->
+  <div class="row d-lg-none">
+    <div class="col-lg-8">
+      <div class="d-flex pt-4 mt-3">
+        <div class="w-50 pe-3"><a href="/checkout-shipping/" class="btn btn-secondary d-block w-100"><i class="ci-arrow-left mt-sm-0 me-1"></i><span class="d-none d-sm-inline">Back to Shipping</span><span class="d-inline d-sm-none">Back</span></a></div>
+        <div class="w-50 ps-2"><a href="/checkout-review/" class="btn btn-primary d-block w-100"><span class="d-none d-sm-inline">Review your order</span><span class="d-inline d-sm-none">Review order</span><i class="ci-arrow-right mt-sm-0 ms-1"></i></a></div>
+      </div>
+    </div>
+  </div>
+</div>

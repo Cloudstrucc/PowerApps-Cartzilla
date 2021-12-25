@@ -1,0 +1,22 @@
+- adx_managecontentsnippets: false
+  adx_managesitemarkers: false
+  adx_manageweblinksets: false
+  adx_name: Preview permission for Basic Portal
+  adx_previewunpublishedentities: true
+  adx_websiteaccess_webrole: []
+  adx_websiteaccessid: dafa9483-d541-ec11-8c62-0022483bead5
+- adx_managecontentsnippets: true
+  adx_managesitemarkers: true
+  adx_manageweblinksets: true
+  adx_name: Administrative permissions for Basic Portal
+  adx_previewunpublishedentities: true
+  adx_websiteaccess_webrole:
+  - 09dd5181-d541-ec11-8c62-0022483be0c0
+  adx_websiteaccessid: dbfa9483-d541-ec11-8c62-0022483bead5
+- adx_managecontentsnippets: false
+  adx_managesitemarkers: false
+  adx_manageweblinksets: false
+  adx_name: Henry Zhu
+  adx_previewunpublishedentities: false
+  adx_websiteaccess_webrole: []
+  adx_websiteaccessid: fec13e07-6b4c-ec11-8f8e-000d3ae9a369

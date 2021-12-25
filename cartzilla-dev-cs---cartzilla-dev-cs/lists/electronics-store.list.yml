@@ -1,0 +1,238 @@
+adx_calendar_enabled: false
+adx_entitylistid: 91fcf206-1352-ec11-8f8e-000d3ae9a369
+adx_entityname: product
+adx_entitypermissionsenabled: true
+adx_filter_enabled: false
+adx_idquerystringparametername: id
+adx_map_distancevalues: 5,10,25,50,100
+adx_map_enabled: false
+adx_map_infoboxoffsetx: 25
+adx_map_infoboxoffsety: 46
+adx_map_pushpinheight: 39
+adx_map_pushpinwidth: 32
+adx_map_resturl: https://dev.virtualearth.net/REST/v1/Locations
+adx_map_zoom: 12
+adx_name: electronics store
+adx_odata_enabled: false
+adx_odata_view: 7d4adb47-1252-ec11-8f8e-000d3ae9a369
+adx_pagesize: 10
+adx_searchenabled: false
+adx_view: 7d4adb47-1252-ec11-8f8e-000d3ae9a369,6e08f3e8-8957-ec11-8f8e-0022483da2ff,cbe7982f-8a57-ec11-8f8e-0022483da89a,bf86c488-8a57-ec11-8f8e-0022483da89a
+adx_views: >-
+  {
+
+    "Type": "ViewMetadata",
+
+    "Views": [
+
+      {
+
+        "Type": "View",
+
+        "ViewId": "7d4adb47-1252-ec11-8f8e-000d3ae9a369",
+
+        "DisplayName": [
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1033,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1036,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1040,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1043,
+
+            "Value": ""
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "Type": "View",
+
+        "ViewId": "6e08f3e8-8957-ec11-8f8e-0022483da2ff",
+
+        "DisplayName": [
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1033,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1036,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1040,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1043,
+
+            "Value": ""
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "Type": "View",
+
+        "ViewId": "cbe7982f-8a57-ec11-8f8e-0022483da89a",
+
+        "DisplayName": [
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1033,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1036,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1040,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1043,
+
+            "Value": ""
+
+          }
+
+        ]
+
+      },
+
+      {
+
+        "Type": "View",
+
+        "ViewId": "bf86c488-8a57-ec11-8f8e-0022483da89a",
+
+        "DisplayName": [
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1033,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1036,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1040,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1043,
+
+            "Value": ""
+
+          }
+
+        ]
+
+      }
+
+    ]
+
+  }

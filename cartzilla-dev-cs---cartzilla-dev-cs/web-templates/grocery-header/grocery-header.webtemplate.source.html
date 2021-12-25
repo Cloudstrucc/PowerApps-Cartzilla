@@ -1,0 +1,98 @@
+
+    <!-- Navbar-->
+    <header class="bg-light shadow-sm fixed-top" data-fixed-element>
+      <div class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid"><a class="navbar-brand d-none d-sm-block me-3 me-xl-4 flex-shrink-0" href="/"><img src="/resources/vendor/img/logo-dark.png" width="142" alt="Cartzilla"></a><a class="navbar-brand d-sm-none me-2" href="/"><img src="/resources/vendor/img/logo-icon.png" width="74" alt="Cartzilla"></a>
+          <!-- Search-->
+          <div class="input-group d-none d-lg-flex flex-nowrap mx-4"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+            <input class="form-control rounded-start w-100" type="text" placeholder="Search for products">
+            <select class="form-select flex-shrink-0" style="width: 14rem;">
+              <option>All categories</option>
+              <option>Bakery</option>
+              <option>Fruits and Vegetables</option>
+              <option>Dairy and Eggs</option>
+              <option>Meat and Poultry</option>
+              <option>Fish and Seafood</option>
+              <option>Sauces and Spices</option>
+              <option>Canned Food and Oil</option>
+              <option>Alcoholic Beverages</option>
+              <option>Soft Drinks and Juice</option>
+              <option>Packets, Cereals</option>
+              <option>Frozen</option>
+              <option>Snaks, Sweets and Chips</option>
+              <option>Personal hygiene</option>
+              <option>Kitchenware</option>
+            </select>
+          </div>
+          <!-- Toolbar-->
+          <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center ms-xl-2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideNav"><span class="navbar-toggler-icon"></span></button><a class="navbar-tool d-flex d-lg-none" href="#searchBox" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="searchBox"><span class="navbar-tool-tooltip">Search</span>
+              <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-search"></i></div></a><a class="navbar-tool d-none d-lg-flex" href="#"><span class="navbar-tool-tooltip">Wishlist</span>
+              <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-heart"></i></div>
+              </a>
+                  <a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" 
+                   {% if user %}
+                        href="{% if homeurl%}/{{ homeurl }}{% endif %}{{ website.sign_out_url_substitution }}">
+                    {% else %}
+                        href="/SignIn/">
+                   {% endif %}
+                   <div class="navbar-tool-icon-box"><i class="navbar-tool-icon ci-user"></i></div>
+                   <div class="navbar-tool-text ms-n3">
+                   {% if user %}
+                    <small>Hello, {{user.fullname}}</small>Sign Out</div>
+                   {% else %}
+                    <small>Hello, Sign in</small>My Account</div>
+                   {% endif %}          
+                   </a>
+              <div class="navbar-tool dropdown ms-3"><a class="navbar-tool-icon-box bg-secondary dropdown-toggle" href="/grocery-checkout/"><span class="navbar-tool-label">3</span><i class="navbar-tool-icon ci-cart"></i></a><a class="navbar-tool-text" href="/grocery-checkout/"><small>My Cart</small>$25.00</a>
+              <div class="dropdown-menu dropdown-menu-end">
+                <div class="widget widget-cart px-3 pt-2 pb-3" style="width: 20rem;">
+                  <div style="height: 15rem;" data-simplebar data-simplebar-auto-hide="false">
+                    <div class="widget-cart-item pb-2 border-bottom">
+                      <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                      <div class="d-flex align-items-center"><a class="d-block" href="/grocery-single/"><img src="/resources/vendor/img/grocery/cart/th01.jpg" width="64" alt="Product"></a>
+                        <div class="ps-2">
+                          <h6 class="widget-product-title"><a href="/grocery-single/">Frozen Oven-ready Poultry</a></h6>
+                          <div class="widget-product-meta"><span class="text-accent me-2">$15.<small>00</small></span><span class="text-muted">x 1</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-cart-item py-2 border-bottom">
+                      <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                      <div class="d-flex align-items-center"><a class="d-block" href="/grocery-single/"><img src="/resources/vendor/img/grocery/cart/th02.jpg" width="64" alt="Product"></a>
+                        <div class="ps-2">
+                          <h6 class="widget-product-title"><a href="/grocery-single/">Nut Chocolate Paste (750g)</a></h6>
+                          <div class="widget-product-meta"><span class="text-accent me-2">$6.<small>50</small></span><span class="text-muted">x 1</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="widget-cart-item py-2 border-bottom">
+                      <button class="btn-close text-danger" type="button" aria-label="Remove"><span aria-hidden="true">&times;</span></button>
+                      <div class="d-flex align-items-center"><a class="d-block" href="/grocery-single/"><img src="/resources/vendor/img/grocery/cart/th03.jpg" width="64" alt="Product"></a>
+                        <div class="ps-2">
+                          <h6 class="widget-product-title"><a href="/grocery-single/">Mozzarella Mini Cheese</a></h6>
+                          <div class="widget-product-meta"><span class="text-accent me-2">$3.<small>50</small></span><span class="text-muted">x 1</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-wrap justify-content-between align-items-center pt-3">
+                    <div class="fs-sm me-2 py-2"><span class="text-muted">Total:</span><span class="text-accent fs-base ms-1">$25.<small>00</small></span></div><a class="btn btn-primary btn-sm" href="/grocery-checkout/"><i class="ci-card me-2 fs-base align-middle"></i>Checkout<i class="ci-arrow-right ms-1 me-n1"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Search collapse-->
+      <div class="collapse" id="searchBox">
+        <div class="card pt-2 pb-4 border-0 rounded-0">
+          <div class="container">
+            <div class="input-group"><i class="ci-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+              <input class="form-control rounded-start" type="text" placeholder="Search for products">
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>

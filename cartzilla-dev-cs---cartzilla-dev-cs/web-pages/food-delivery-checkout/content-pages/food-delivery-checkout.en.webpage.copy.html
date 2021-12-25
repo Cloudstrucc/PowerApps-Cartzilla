@@ -1,0 +1,109 @@
+<div class="container pt-4 pb-3 py-sm-4">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb flex-lg-nowrap justify-content-center justify-content-lg-start">
+            <li class="breadcrumb-item"><a class="text-nowrap" href="index"><i class="ci-home"></i>Home</a></li>
+            <li class="breadcrumb-item text-nowrap"><a href="food-delivery-cart">Cart</a>
+            </li>
+            <li class="breadcrumb-item text-nowrap active" aria-current="page">Checkout</li>
+          </ol>
+        </nav>
+        <div class="rounded-3 shadow-lg mt-4 mb-5">
+          <ul class="nav nav-tabs nav-justified mb-sm-4">
+            <li class="nav-item"><a class="nav-link fs-lg fw-medium py-4" href="food-delivery-cart">1. Your order</a></li>
+            <li class="nav-item"><a class="nav-link fs-lg fw-medium py-4 active" href="food-delivery-checkout">2. Checkout</a></li>
+          </ul>
+          <form class="needs-validation px-3 px-sm-4 px-xl-5 pt-sm-1 pb-4 pb-sm-5" novalidate="">
+            <div class="row pb-4 pt-3">
+              <div class="col-sm-6 mb-4">
+                <label class="form-label" for="fd-name">Your name<sup class="text-danger ms-1">*</sup></label>
+                <input class="form-control" type="text" required="" id="fd-name">
+                <div class="invalid-feedback">Please enter your name!</div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <label class="form-label" for="fd-phone">Phone number<sup class="text-danger ms-1">*</sup></label>
+                <input class="form-control" type="text" required="" id="fd-phone">
+                <div class="invalid-feedback">Please enter your phone number!</div>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <label class="form-label" for="fd-time">Delivery time<sup class="text-danger ms-1">*</sup></label>
+                <select class="form-select" id="fd-time">
+                  <option value="asap">As soon as possible</option>
+                  <option value="11:00am">by 11:00 AM</option>
+                  <option value="11:15am">by 11:15 AM</option>
+                  <option value="11:30am">by 11:30 AM</option>
+                  <option value="11:45am">by 11:45 AM</option>
+                  <option value="12:00pm">by 12:00 PM</option>
+                  <option value="12:15pm">by 12:15 PM</option>
+                  <option value="12:30pm">by 12:30 PM</option>
+                  <option value="12:45pm">by 12:45 PM</option>
+                  <option value="1:00pm">by 1:00 PM</option>
+                </select>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <div class="fs-sm fw-medium mb-3">Drop-off options</div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="dropoff" checked="" id="hand-to-me">
+                  <label class="form-check-label" for="hand-to-me">Hand it to me</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="dropoff" id="at-door">
+                  <label class="form-check-label" for="at-door">Leave it at my door</label>
+                </div>
+              </div>
+            </div>
+            <h2 class="h5 pb-3">Delivery address</h2>
+            <div class="row mb-4">
+              <div class="col-sm-6 mb-4">
+                <label class="form-label" for="fd-city">City<sup class="text-danger ms-1">*</sup></label>
+                <select class="form-select" id="fd-city">
+                  <option value="new-york">New York</option>
+                  <option value="los-angeles">Los Angeles</option>
+                  <option value="chicago">Chicago</option>
+                  <option value="houston">Houston</option>
+                  <option value="philadelphia">Philadelphia</option>
+                  <option value="san-diego">San Diego</option>
+                  <option value="miami">Miami</option>
+                </select>
+              </div>
+              <div class="col-sm-6 mb-4">
+                <label class="form-label" for="fd-address">Address<sup class="text-danger ms-1">*</sup></label>
+                <input class="form-control" type="text" placeholder="Street, Apartment number or suite" required="" id="fd-address">
+                <div class="invalid-feedback">Please enter your address!</div>
+              </div>
+              <div class="col-12 mb-4">
+                <label class="form-label mb-3" for="fd-comments"><span class="badge bg-info fs-xs me-2">Note</span>Additional comments</label>
+                <textarea class="form-control" rows="5" id="fd-comments"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 mb-4 mb-sm-0">
+                <h2 class="h5 pb-2">Cash on delivery</h2>
+                <div class="form-check form-check-inline mb-3">
+                  <input class="form-check-input" type="radio" name="payment" checked="" id="cash">
+                  <label class="form-check-label" for="cash">Pay with cash to the courier</label>
+                </div>
+                <div class="d-flex align-items-center">
+                  <label class="form-label fw-normal text-nowrap me-3 mb-0" for="fd-change">I need change from</label>
+                  <div class="input-group flex-nowrap" style="width: 8rem;"><span class="input-group-text"><i class="ci-dollar"></i></span>
+                    <input class="form-control bg-none pe-3" type="text" id="fd-change">
+                  </div>
+                </div>
+                <h2 class="h5 mt-3 pt-4 pb-2">Online payment</h2>
+                <div class="form-check form-check-inline pb-4">
+                  <input class="form-check-input" type="radio" name="payment" id="online">
+                  <label class="form-check-label" for="online">Pay with:&nbsp;&nbsp;&nbsp;<img class="d-inline-block align-middle" src="/resources/vendor/img/cards.png" style="width: 187px;" alt="Cerdit Cards"></label>
+                </div>
+                <button class="btn btn-primary d-block w-100 mt-3" type="submit">Complete order</button>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-fle flex-column h-100 rounded-3 bg-secondary px-3 px-sm-4 py-4">
+                  <h2 class="h5 pb-3">Your total</h2>
+                  <div class="d-flex justify-content-between fs-md border-bottom pb-3 mb-3"><span>Subtotal:</span><span class="text-heading">$24.<small>00</small></span></div>
+                  <div class="d-flex justify-content-between fs-md border-bottom pb-3 mb-3"><span>Delivery:</span><span class="text-heading">$6.<small>00</small></span></div>
+                  <div class="d-flex justify-content-between fs-md mb-2"><span>Total:</span><span class="text-heading fw-medium">$30.<small>00</small></span></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>

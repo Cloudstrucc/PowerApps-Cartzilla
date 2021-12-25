@@ -1,0 +1,20 @@
+{% entitylist fsmlist = name: listname %}
+    {% for view in fsmlist.views %}
+    {% if view.name == viewname %}
+    {% entityview  id:view.id %}
+          {% for e in entityview.records  %}
+                    {% assign c = entities['product'][e.id] %}
+                    {% assign odata_image_provider = "https://cartzilla-dev-cs.crm3.dynamics.com/api/data/v9.0/products(" | append: {{e.id}} | append:")/clds_thumbnailsmall/$value" %}
+
+<div class="d-flex align-items-center pb-2 border-bottom"><a class="d-block" href="/shop-single-v1/?productid={{e.id}}"><img src="{{odata_image_provider}}" width="64" alt="Product"></a>
+<div class="ps-2">
+    <h6 class="widget-product-title"><a href="/shop-single-v1/?productid={{e.id}}">{{ c.description }}</a></h6>
+    <div class="widget-product-meta"><span class="text-accent me-2">${{ c.currentcost | round:2 }}</small></span></div>
+</div>
+</div>
+
+          {% endfor %}  
+    {% endentityview %}
+    {% endif %}
+    {% endfor %}
+{% endentitylist %}   

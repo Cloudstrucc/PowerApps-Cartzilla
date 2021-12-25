@@ -1,0 +1,81 @@
+adx_calendar_enabled: false
+adx_entitylistid: 067e9367-0f59-ec11-8f8e-0022483da89a
+adx_entityname: product
+adx_entitypermissionsenabled: true
+adx_filter_enabled: false
+adx_idquerystringparametername: id
+adx_map_distancevalues: 5,10,25,50,100
+adx_map_enabled: false
+adx_map_infoboxoffsetx: 25
+adx_map_infoboxoffsety: 46
+adx_map_pushpinheight: 39
+adx_map_pushpinwidth: 32
+adx_map_resturl: https://dev.virtualearth.net/REST/v1/Locations
+adx_map_zoom: 12
+adx_name: shop-grid-ft
+adx_odata_enabled: false
+adx_pagesize: 200
+adx_searchenabled: false
+adx_view: 13d92eed-a057-ec11-8f8e-0022483da89a
+adx_views: >-
+  {
+
+    "Type": "ViewMetadata",
+
+    "Views": [
+
+      {
+
+        "Type": "View",
+
+        "ViewId": "13d92eed-a057-ec11-8f8e-0022483da89a",
+
+        "DisplayName": [
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1033,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1036,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1040,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1043,
+
+            "Value": ""
+
+          }
+
+        ]
+
+      }
+
+    ]
+
+  }

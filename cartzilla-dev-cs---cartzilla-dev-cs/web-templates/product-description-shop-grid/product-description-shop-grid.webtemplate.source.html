@@ -1,0 +1,23 @@
+ <!-- Product-->
+        <div class="col-md-4 col-sm-6 px-2 mb-4">
+          <div class="card product-card"><button type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to wishlist" class="btn-wishlist btn-sm"><i class="ci-heart"></i></button><a href="/shop-single-v3/?productid={{p.productid}}" class="card-img-top d-block overflow-hidden"><img src="https://cartzilla-dev-cs.crm3.dynamics.com/api/data/v9.0/products({{p.productid}})/clds_thumbnail/$value"></a>
+            <div class="card-body py-2"><a href="#" class="product-meta d-block fs-xs pb-1">Sneakers &amp; Keds</a>
+              <h3 class="product-title fs-sm"><a href="/shop-single-v3/?productid={{p.productid}}"</a></h3>
+              <div class="d-flex justify-content-between">
+                <div class="product-price"><span class="text-accent">{{ c.currentcost | round:2 }}</span></div>
+                <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i></div>
+              </div>
+            </div>
+            <div class="card-body card-body-hidden">
+              <div class="text-center pb-2">
+                <div class="form-check form-option form-check-inline mb-2"><input type="radio" name="size1" id="s-75" class="form-check-input"><label for="s-75" class="form-option-label">7.5</label></div>
+                <div class="form-check form-option form-check-inline mb-2"><input type="radio" name="size1" id="s-80" checked="" class="form-check-input"><label for="s-80" class="form-option-label">8</label></div>
+                <div class="form-check form-option form-check-inline mb-2"><input type="radio" name="size1" id="s-85" class="form-check-input"><label for="s-85" class="form-option-label">8.5</label></div>
+                <div class="form-check form-option form-check-inline mb-2"><input type="radio" name="size1" id="s-90" class="form-check-input"><label for="s-90" class="form-option-label">9</label></div>
+              </div><button type="button" class="btn btn-primary btn-sm d-block w-100 mb-2"><i class="ci-cart fs-sm me-1"></i>Add to Cart
+              </button>
+              <div class="text-center"><a href="/shop-single-v3/?productid={{p.productid}}" data-bs-toggle="modal" class="nav-link-style fs-ms"><i class="ci-eye align-middle me-1"></i>Quick view</a></div>
+            </div>
+          </div>
+          <hr class="d-sm-none">
+        </div>

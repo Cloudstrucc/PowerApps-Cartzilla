@@ -1,0 +1,81 @@
+adx_calendar_enabled: false
+adx_entitylistid: c2745e3d-705f-ec11-8f8e-000d3a845885
+adx_entityname: product
+adx_entitypermissionsenabled: true
+adx_filter_enabled: false
+adx_idquerystringparametername: id
+adx_map_distancevalues: 5,10,25,50,100
+adx_map_enabled: false
+adx_map_infoboxoffsetx: 25
+adx_map_infoboxoffsety: 46
+adx_map_pushpinheight: 39
+adx_map_pushpinwidth: 32
+adx_map_resturl: https://dev.virtualearth.net/REST/v1/Locations
+adx_map_zoom: 12
+adx_name: Cart
+adx_odata_enabled: false
+adx_pagesize: 500
+adx_searchenabled: false
+adx_view: 5073b1dd-725f-ec11-8f8e-000d3a845885
+adx_views: >-
+  {
+
+    "Type": "ViewMetadata",
+
+    "Views": [
+
+      {
+
+        "Type": "View",
+
+        "ViewId": "5073b1dd-725f-ec11-8f8e-000d3a845885",
+
+        "DisplayName": [
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1033,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1036,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1040,
+
+            "Value": ""
+
+          },
+
+          {
+
+            "Type": "LanguageResources",
+
+            "LCID": 1043,
+
+            "Value": ""
+
+          }
+
+        ]
+
+      }
+
+    ]
+
+  }

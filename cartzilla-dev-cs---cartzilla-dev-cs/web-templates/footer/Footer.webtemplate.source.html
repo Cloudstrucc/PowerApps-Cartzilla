@@ -1,0 +1,57 @@
+<footer role="contentinfo">
+  <div class="footer-bottom hidden-print">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-left">
+          {% editable snippets 'Footer' type: 'html' %}
+        </div>
+        <div class="frenchAccessibilityLink">
+          <a id="frenchAccesssibleLink" target="_blank" href="" title=""></a>
+        </div>
+        {% assign footer_nav = weblinks["Footer"] %}
+        {% if footer_nav %}
+          <div class="col-md-8 col-sm-12 col-xs-12 text-left {% if footer_nav.editable %}xrm-entity xrm-editable-adx_weblinkset{% endif %}" data-weblinks-maxdepth="2">
+            <ul class="row list-unstyled">
+              {% for link in footer_nav.weblinks %}
+                <li class="footer-list col-sm-3">
+                  <nav aria-label="{{ link.name | escape }}">
+                    <h4>{{ link.name | escape }}</h4>
+                    <ul class="list-unstyled">
+                      {% if link.display_page_child_links %}
+                        {% assign sublinks = sitemap[link.url].children %}
+                      {% else %}
+                        {% assign sublinks = link.weblinks %}
+                      {% endif %}
+                      {% if sublinks.size > 0 %}
+                        {% for sublink in sublinks %}
+                          <li>
+                            <a href="{{ sublink.url | escape }}" {% if sublink.Open_In_New_Window %} target="_blank" {% endif %}>{{ sublink.name | default:sublink.title }}</a>
+                          </li>
+                        {% endfor %}
+                      {% endif %}
+                    </ul>
+                  </nav>
+                </li>
+              {% endfor %}
+            </ul>
+            {% editable footer_nav %}
+          </div>
+        {% endif %}
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+  window.onload = function() {
+        if(window.navigator.language == "fr"){
+          var accessibilityText="Accessibilité : partiellement conforme";
+          var accessibilityHref="https://go.microsoft.com/fwlink/?linkid=2163806";
+          var frenchLink = document.getElementById("frenchAccesssibleLink");
+            if (frenchLink != null)
+              {
+                frenchLink.innerHTML =accessibilityText ;
+                frenchLink.setAttribute("href",accessibilityHref );
+                frenchLink.setAttribute("title", accessibilityText);
+              }
+        }
+           };
+ </script>

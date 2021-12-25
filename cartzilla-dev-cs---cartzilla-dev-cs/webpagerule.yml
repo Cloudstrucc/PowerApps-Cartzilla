@@ -1,0 +1,97 @@
+- adx_name: Grant Change to Administrators
+  adx_right: 1
+  adx_webpageaccesscontrolrule_webrole:
+  - 09dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: 07dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageid: 274a9a7d-d541-ec11-8c62-0022483bead5
+- adx_name: Default
+  adx_right: 1
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: 0bee0569-6c4c-ec11-8f8e-000d3ae9ac38
+  adx_webpageid: 284a9a7d-d541-ec11-8c62-0022483bead5
+- adx_name: Read
+  adx_right: 2
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: 1647b44a-d14b-ec11-8f8e-000d3ae9ac38
+  adx_webpageid: 48b3fa58-a3b2-48e8-8b69-e08cdf396861
+- adx_name: Read
+  adx_right: 2
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: 2afaf1da-d14b-ec11-8f8e-000d3ae9ac38
+  adx_webpageid: cec20616-371a-4766-9565-febfc4a99e67
+- adx_name: Grant Change to Content
+  adx_right: 1
+  adx_webpageaccesscontrolrule_webrole: []
+  adx_webpageaccesscontrolruleid: 2d4a9a7d-d541-ec11-8c62-0022483bead5
+  adx_webpageid: 9423646d-8848-ec11-8c62-000d3ae89ecf
+- adx_name: Read
+  adx_right: 2
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: 2e53ab45-914c-ec11-8f8e-000d3ae9a369
+  adx_webpageid: 9b89297f-1762-4131-af1f-910ab3977698
+- adx_name: Read
+  adx_right: 2
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: 37976e38-d24b-ec11-8f8e-000d3ae9ac38
+  adx_webpageid: 038ea668-07f3-43b8-95a4-aba1ae8dd66b
+- adx_name: Henry's Read Rule
+  adx_right: 1
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: 61a5465e-8b4c-ec11-8f8e-000d3ae9a369
+  adx_webpageid: 9b89297f-1762-4131-af1f-910ab3977698
+  statecode: 1
+  statuscode: 2
+- adx_name: Read
+  adx_right: 2
+  adx_scope: 2
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: 7262eb09-d34b-ec11-8f8e-000d3ae9ac38
+  adx_webpageid: 9b89297f-1762-4131-af1f-910ab3977698
+  statecode: 1
+  statuscode: 2
+- adx_name: Read
+  adx_right: 2
+  adx_scope: 2
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: 82c020d9-b648-ec11-8c62-000d3ae89ecf
+  adx_webpageid: 9b89297f-1762-4131-af1f-910ab3977698
+  statecode: 1
+  statuscode: 2
+- adx_name: Read
+  adx_right: 2
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: 841fece8-d24b-ec11-8f8e-000d3ae9ac38
+  adx_webpageid: e859368b-03c2-409b-9702-9bf29819fcc9
+- adx_name: Read
+  adx_right: 2
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: 9218a6bb-d24b-ec11-8f8e-000d3ae9ac38
+  adx_webpageid: cc13ace9-6bbc-4180-b5f0-e50d93608de7
+- adx_name: Read
+  adx_right: 2
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: bd25bb97-d14b-ec11-8f8e-000d3ae9ac38
+  adx_webpageid: 707b4084-83da-4fe2-8554-dd9eb26c18e0
+- adx_name: Read
+  adx_right: 2
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: f391f78d-d24b-ec11-8f8e-000d3ae9ac38
+  adx_webpageid: 5c801b4e-69c2-4c83-b066-559171f42f51
+- adx_name: Read
+  adx_right: 2
+  adx_webpageaccesscontrolrule_webrole:
+  - 08dd5181-d541-ec11-8c62-0022483be0c0
+  adx_webpageaccesscontrolruleid: fdd6f7e5-5a4d-ec11-8f8e-000d3ae9a369
+  adx_webpageid: 601ee7b7-b748-ec11-8c62-000d3ae89ecf

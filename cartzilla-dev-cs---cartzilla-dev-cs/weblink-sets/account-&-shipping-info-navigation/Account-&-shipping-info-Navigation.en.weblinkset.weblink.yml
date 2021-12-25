@@ -1,0 +1,64 @@
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 3
+  adx_displaypagechildlinks: false
+  adx_name: Refunds & replacements
+  adx_openinnewwindow: false
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 07c7913d-a94b-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 85a53309-1d4a-ec11-8c62-000d3ae89a77
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 5
+  adx_displaypagechildlinks: false
+  adx_name: Delivery info
+  adx_openinnewwindow: false
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 09098257-a94b-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 85a53309-1d4a-ec11-8c62-000d3ae89a77
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 1
+  adx_displaypagechildlinks: false
+  adx_name: Your account
+  adx_openinnewwindow: false
+  adx_pageid: b96b57b2-0544-ec11-8c62-0022483be0c0
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 5826ce0e-a94b-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 85a53309-1d4a-ec11-8c62-000d3ae89a77
+  statecode: 1
+  statuscode: 2
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 4
+  adx_displaypagechildlinks: false
+  adx_name: Order tracking
+  adx_openinnewwindow: false
+  adx_pageid: 707b4084-83da-4fe2-8554-dd9eb26c18e0
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 6e7ca250-a94b-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 85a53309-1d4a-ec11-8c62-000d3ae89a77
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 2
+  adx_displaypagechildlinks: false
+  adx_name: Shipping rates & policies
+  adx_openinnewwindow: false
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: 919e7225-a94b-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 85a53309-1d4a-ec11-8c62-000d3ae89a77
+- adx_disablepagevalidation: false
+  adx_displayimageonly: false
+  adx_displayorder: 6
+  adx_displaypagechildlinks: false
+  adx_name: Taxes & fees
+  adx_openinnewwindow: false
+  adx_publishingstateid: fe499a7d-d541-ec11-8c62-0022483bead5
+  adx_robotsfollowlink: true
+  adx_weblinkid: a044d174-a94b-ec11-8f8e-000d3ae9a369
+  adx_weblinksetid: 85a53309-1d4a-ec11-8c62-000d3ae89a77

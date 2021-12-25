@@ -1,0 +1,124 @@
+
+<!-- Page Title-->
+<div class="page-title-overlap bg-dark pt-4">
+  <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+    <div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
+          <li class="breadcrumb-item"><a href="index.html" class="text-nowrap"><i class="ci-home"></i>Home</a></li>
+          <li class="breadcrumb-item text-nowrap"><a href="#">Account</a></li>
+          <li aria-current="page" class="breadcrumb-item text-nowrap active">Support tickets</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
+      <h1 class="h3 text-light mb-0">Support tickets</h1>
+    </div>
+  </div>
+</div>
+<div class="container pb-5 mb-2 mb-md-4">
+  <div class="row">
+
+    <!-- Sidebar-->
+    <aside class="col-lg-4 pt-4 pt-lg-0 pe-xl-5">
+      <div class="bg-white rounded-3 shadow-lg pt-1 mb-5 mb-lg-0">
+        <div class="d-md-flex justify-content-between align-items-center text-center text-md-start p-4">
+          <div class="d-md-flex align-items-center">
+            <div class="img-thumbnail rounded-circle position-relative flex-shrink-0 mx-auto mb-2 mx-md-0 mb-md-0" style="width: 6.375rem;"><span data-bs-toggle="tooltip" title="Reward points" class="badge bg-warning position-absolute end-0 mt-n2">384</span><img src="/resources/vendor/img/testimonials/04.jpg" alt="Susan Gardner" class="rounded-circle"></div>
+            <div class="ps-md-3">
+              <h3 class="fs-base mb-0">Susan Gardner</h3><span class="text-accent fs-sm">s.gardner@example.com</span>
+            </div>
+          </div><a href="#account-menu" data-bs-toggle="collapse" aria-expanded="false" class="btn btn-primary d-lg-none mb-2 mt-3 mt-md-0"><i class="ci-menu me-2"></i>Account menu</a>
+        </div>
+        <div id="account-menu" class="d-lg-block collapse">
+          <div class="bg-secondary px-4 py-3">
+            <h3 class="fs-sm mb-0 text-muted">Dashboard</h3>
+          </div>
+          <ul class="list-unstyled mb-0">
+            <li class="border-bottom mb-0"><a href="/account-orders" class="nav-link-style d-flex align-items-center px-4 py-3"><i class="ci-bag opacity-60 me-2"></i>Orders<span class="fs-sm text-muted ms-auto">1</span></a></li>
+            <li class="border-bottom mb-0"><a href="/account-wishlist" class="nav-link-style d-flex align-items-center px-4 py-3"><i class="ci-heart opacity-60 me-2"></i>Wishlist<span class="fs-sm text-muted ms-auto">3</span></a></li>
+            <li class="mb-0"><a href="/account-tickets" class="nav-link-style d-flex align-items-center px-4 py-3 active"><i class="ci-help opacity-60 me-2"></i>Support tickets<span class="fs-sm text-muted ms-auto">1</span></a></li>
+          </ul>
+          <div class="bg-secondary px-4 py-3">
+            <h3 class="fs-sm mb-0 text-muted">Account settings</h3>
+          </div>
+          <ul class="list-unstyled mb-0">
+            <li class="border-bottom mb-0"><a href="/account-profile" class="nav-link-style d-flex align-items-center px-4 py-3"><i class="ci-user opacity-60 me-2"></i>Profile info</a></li>
+            <li class="border-bottom mb-0"><a href="/account-address" class="nav-link-style d-flex align-items-center px-4 py-3"><i class="ci-location opacity-60 me-2"></i>Addresses</a></li>
+            <li class="mb-0"><a href="/account-payment" class="nav-link-style d-flex align-items-center px-4 py-3"><i class="ci-card opacity-60 me-2"></i>Payment methods</a></li>
+            <li class="d-lg-none border-top mb-0"><a href="/account-signin" class="nav-link-style d-flex align-items-center px-4 py-3"><i class="ci-sign-out opacity-60 me-2"></i>Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+<!-- Content  -->
+    <section class="col-lg-8">
+
+      <!-- Toolbar-->
+      <div class="d-flex justify-content-between align-items-center pt-lg-2 pb-4 pb-lg-5 mb-lg-3">
+        <div class="d-flex align-items-center"><label for="ticket-sort" class="d-none d-lg-block fs-sm text-light text-nowrap opacity-75 me-2">Sort tickets:</label><label for="ticket-sort" class="d-lg-none fs-sm text-nowrap opacity-75 me-2">Sort tickets:</label><select id="ticket-sort" class="form-select">
+            <option>All</option>
+            <option>Open</option>
+            <option>Closed</option>
+          </select></div><a href="/account-signin" class="btn btn-primary btn-sm d-none d-lg-inline-block"><i class="ci-sign-out me-2"></i>Sign out</a>
+      </div>
+<!-- Tickets list-->
+      <div class="table-responsive fs-md mb-4">
+        <table class="table table-hover mb-0">
+          <thead>
+            <tr>
+              <th>Ticket Subject</th>
+              <th>Date Submitted | Updated</th>
+              <th>Type</th>
+              <th>Priority</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-3"><a href="/account-single-ticket" class="nav-link-style fw-medium">My new ticket</a></td>
+              <td class="py-3">09/27/2019 | 09/30/2019</td>
+              <td class="py-3">Website problem</td>
+              <td class="py-3"><span class="badge bg-warning m-0">High</span></td>
+              <td class="py-3"><span class="badge bg-success m-0">Open</span></td>
+            </tr>
+            <tr>
+              <td class="py-3"><a href="/account-single-ticket" class="nav-link-style fw-medium">Another ticket</a></td>
+              <td class="py-3">08/21/2019 | 08/23/2019</td>
+              <td class="py-3">Partner request</td>
+              <td class="py-3"><span class="badge bg-info m-0">Medium</span></td>
+              <td class="py-3"><span class="badge bg-secondary m-0">Closed</span></td>
+            </tr>
+            <tr>
+              <td class="py-3"><a href="/account-single-ticket" class="nav-link-style fw-medium">Yet another ticket</a></td>
+              <td class="py-3">11/19/2018 | 11/20/2018</td>
+              <td class="py-3">Complaint</td>
+              <td class="py-3"><span class="badge bg-danger m-0">Urgent</span></td>
+              <td class="py-3"><span class="badge bg-secondary m-0">Closed</span></td>
+            </tr>
+            <tr>
+              <td class="py-3"><a href="/account-single-ticket" class="nav-link-style fw-medium">My old ticket</a></td>
+              <td class="py-3">06/19/2018 | 06/20/2018</td>
+              <td class="py-3">Info inquiry</td>
+              <td class="py-3"><span class="badge bg-success m-0">Low</span></td>
+              <td class="py-3"><span class="badge bg-secondary m-0">Closed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="text-end"><button data-bs-toggle="modal" data-bs-target="#open-ticket" class="btn btn-primary">Submit new ticket</button></div>
+    </section>
+  </div>
+</div>
+<!-- Toolbar for handheld devices (Default)-->
+<div class="handheld-toolbar">
+  <div class="d-table table-layout-fixed w-100"><a href="/account-wishlist" class="d-table-cell handheld-toolbar-item"><span class="handheld-toolbar-icon"><i class="ci-heart"></i></span><span class="handheld-toolbar-label">Wishlist</span></a><a href="javascript:void(0)" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" onclick="window.scrollTo(0, 0)" class="d-table-cell handheld-toolbar-item"><span class="handheld-toolbar-icon"><i class="ci-menu"></i></span><span class="handheld-toolbar-label">Menu</span></a><a href="/shop-cart" class="d-table-cell handheld-toolbar-item"><span class="handheld-toolbar-icon"><i class="ci-cart"></i><span class="badge bg-primary rounded-pill ms-1">4</span></span><span class="handheld-toolbar-label">$265.00</span></a></div>
+</div>
+<!-- Back To Top Button--><a href="#top" data-scroll="" class="btn-scroll-top"><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon ci-arrow-up"> </i></a>
+<!-- Vendor scrits: js libraries and plugins-->
+<script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/simplebar/dist/simplebar.min.js"></script>
+<script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+<script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<!-- Main theme script-->
+<script src="js/theme.min.js"></script>

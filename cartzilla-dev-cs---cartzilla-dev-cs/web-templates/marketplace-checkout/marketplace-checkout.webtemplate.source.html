@@ -1,0 +1,147 @@
+{% include 'marketplace-header'%}
+<div class="page-title-overlap bg-accent pt-4">
+  <div class="container d-lg-flex justify-content-between py-2 py-lg-3">
+    <div class="order-lg-2 mb-3 mb-lg-0 pt-lg-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
+          <li class="breadcrumb-item"><a href="/" class="text-nowrap"><i class="ci-home"></i>Home</a></li>
+          <li class="breadcrumb-item text-nowrap"><a href="/marketplace-category">Market</a></li>
+          <li aria-current="page" class="breadcrumb-item text-nowrap active">Checkout</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="order-lg-1 pe-lg-4 text-center text-lg-start">
+      <h1 class="h3 text-light mb-0">Checkout</h1>
+    </div>
+  </div>
+</div>
+<div class="container mb-5 pb-3">
+  <div class="bg-light shadow-lg rounded-3 overflow-hidden">
+    <div class="row">
+
+      <!-- Content-->
+      <section class="col-lg-8 pt-2 pt-lg-4 pb-4 mb-3">
+        <div class="pt-2 px-4 pe-lg-0 ps-xl-5">
+
+          <!-- Title-->
+          <h2 class="h6 border-bottom pb-3 mb-3">Billing details</h2>
+<!-- Billing detail-->
+          <div class="row pb-4 gx-4 gy-3">
+            <div class="col-sm-6"><label for="mc-fn" class="form-label">First name <span class="text-danger">*</span></label><input type="text" value="Jonathan" id="mc-fn" class="form-control"></div>
+            <div class="col-sm-6"><label for="mc-ln" class="form-label">Last name <span class="text-danger">*</span></label><input type="text" value="Doe" id="mc-ln" class="form-control"></div>
+            <div class="col-12"><label for="mc-email" class="form-label">Email address <span class="text-danger">*</span></label><input type="email" value="contact@createx.studio" id="mc-email" class="form-control"></div>
+            <div class="col-sm-6"><label for="mc-company" class="form-label">Company</label><input type="text" value="Createx Studio" id="mc-company" class="form-control"></div>
+            <div class="col-sm-6"><label for="mc-country" class="form-label">Country <span class="text-danger">*</span></label><select id="mc-country" class="form-select">
+                <option value="">Select country</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Belgium">Belgium</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Madagascar" selected="">Madagascar</option>
+                <option value="Spain">Spain</option>
+                <option value="UK">United Kingdom</option>
+                <option value="USA">USA</option>
+              </select></div>
+          </div>
+<!-- Order preview on mobile (screens small than 991px)-->
+          <div class="widget mb-3 d-lg-none">
+            <h2 class="widget-title">Order summary</h2>
+            <div class="d-flex align-items-center pb-2 border-bottom"><a href="/marketplace-single" class="d-block flex-shrink-0 me-2"><img src="/resources/vendor/img/marketplace/products/widget/01.jpg" width="64" alt="Product" class="rounded-1"></a>
+              <div class="ps-1">
+                <h6 class="widget-product-title"><a href="/marketplace-single">UI Isometric Devices Pack</a></h6>
+                <div class="widget-product-meta"><span class="text-accent border-end pe-2 me-2">$23.<small>99</small></span><span class="fs-xs text-muted">Standard license</span></div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center py-2 border-bottom"><a href="/marketplace-single" class="d-block flex-shrink-0 me-2"><img src="/resources/vendor/img/marketplace/products/widget/02.jpg" width="64" alt="Product" class="rounded-1"></a>
+              <div class="ps-1">
+                <h6 class="widget-product-title"><a href="/marketplace-single">Project Devices Showcase</a></h6>
+                <div class="widget-product-meta"><span class="text-accent border-end pe-2 me-2">$18.<small>99</small></span><span class="fs-xs text-muted">Standard license</span></div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center py-2 border-bottom"><a href="/marketplace-single" class="d-block flex-shrink-0 me-2"><img src="/resources/vendor/img/marketplace/products/widget/03.jpg" width="64" alt="Product" class="rounded-1"></a>
+              <div class="ps-1">
+                <h6 class="widget-product-title"><a href="/marketplace-single">Gravity Devices UI Mockup</a></h6>
+                <div class="widget-product-meta"><span class="text-accent border-end pe-2 me-2">$15.<small>99</small></span><span class="fs-xs text-muted">Standard license</span></div>
+              </div>
+            </div>
+            <ul class="list-unstyled fs-sm py-3">
+              <li class="d-flex justify-content-between align-items-center"><span class="me-2">Subtotal:</span><span class="text-end">$58.<small>97</small></span></li>
+              <li class="d-flex justify-content-between align-items-center"><span class="me-2">Taxes:</span><span class="text-end">$10.<small>45</small></span></li>
+              <li class="d-flex justify-content-between align-items-center fs-base"><span class="me-2">Total:</span><span class="text-end">$69.<small>42</small></span></li>
+            </ul>
+          </div>
+<!-- Payment methods accordion-->
+          <div id="payment-method" role="tablist" class="accordion mb-2">
+            <div class="accordion-item">
+              <h3 class="accordion-header"><a href="#card" data-bs-toggle="collapse" class="accordion-button"><i class="ci-card fs-lg me-2 mt-n1 align-middle"></i>Pay with Credit Card</a></h3>
+              <div id="card" data-bs-parent="#payment-method" role="tabpanel" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p class="fs-sm"><span>We accept following credit cards:&nbsp;&nbsp;</span><img src="/resources/vendor/img/cards.png" alt="Cerdit Cards" class="d-inline-block align-middle" style="width: 187px;"></p>
+                  <div class="credit-card-wrapper"></div>
+                  <form class="credit-card-form row g-3">
+                    <div class="col-sm-6"><input type="text" name="number" placeholder="Card Number" required="" class="form-control"></div>
+                    <div class="col-sm-6"><input type="text" name="name" placeholder="Full Name" required="" class="form-control"></div>
+                    <div class="col-sm-3"><input type="text" name="expiry" placeholder="MM/YY" required="" class="form-control"></div>
+                    <div class="col-sm-3"><input type="text" name="cvc" placeholder="CVC" required="" class="form-control"></div>
+                    <div class="col-sm-6"><button type="submit" class="btn btn-primary d-block w-100">Place order</button></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><a href="#paypal" data-bs-toggle="collapse" class="accordion-button collapsed"><i class="ci-paypal me-2 align-middle"></i>Pay with PayPal</a></h3>
+              <div id="paypal" data-bs-parent="#payment-method" role="tabpanel" class="accordion-collapse collapse">
+                <div class="accordion-body fs-sm">
+                  <p><span class="fw-medium">PayPal</span> - the safer, easier way to pay</p><button type="button" class="btn btn-primary">Checkout with PayPal</button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header"><a href="#points" data-bs-toggle="collapse" class="accordion-button collapsed"><i class="ci-money-bag me-2"></i>Pay with my account balance</a></h3>
+              <div id="points" data-bs-parent="#payment-method" role="tabpanel" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <p>You currently have<span class="fw-medium">&nbsp;$1,375.<small>00</small></span>&nbsp;on your account balance.</p><button type="submit" class="btn btn-primary">Pay with account balance</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- Sidebar-->
+
+      <!-- Order preview on desktop (screens larger than 991px)-->
+      <aside class="col-lg-4 d-none d-lg-block ps-xl-5">
+        <hr class="d-lg-none">
+        <div class="p-4 h-100 ms-auto border-start">
+          <div class="widget px-lg-2 py-2 mb-3">
+            <h2 class="widget-title text-center">Order summary</h2>
+            <div class="d-flex align-items-center pb-2 border-bottom"><a href="/marketplace-single" class="d-block flex-shrink-0 me-2"><img src="/resources/vendor/img/marketplace/products/widget/01.jpg" width="64" alt="Product" class="rounded-1"></a>
+              <div class="ps-1">
+                <h6 class="widget-product-title"><a href="/marketplace-single">UI Isometric Devices Pack</a></h6>
+                <div class="widget-product-meta"><span class="text-accent border-end pe-2 me-2">$23.<small>00</small></span><span class="fs-xs text-muted">Standard license</span></div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center py-2 border-bottom"><a href="/marketplace-single" class="d-block flex-shrink-0 me-2"><img src="/resources/vendor/img/marketplace/products/widget/02.jpg" width="64" alt="Product" class="rounded-1"></a>
+              <div class="ps-1">
+                <h6 class="widget-product-title"><a href="/marketplace-single">Project Devices Showcase</a></h6>
+                <div class="widget-product-meta"><span class="text-accent border-end pe-2 me-2">$18.<small>00</small></span><span class="fs-xs text-muted">Standard license</span></div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center py-2 border-bottom"><a href="/marketplace-single" class="d-block flex-shrink-0 me-2"><img src="/resources/vendor/img/marketplace/products/widget/03.jpg" width="64" alt="Product" class="rounded-1"></a>
+              <div class="ps-1">
+                <h6 class="widget-product-title"><a href="/marketplace-single">Gravity Devices UI Mockup</a></h6>
+                <div class="widget-product-meta"><span class="text-accent border-end pe-2 me-2">$15.<small>00</small></span><span class="fs-xs text-muted">Standard license</span></div>
+              </div>
+            </div>
+            <ul class="list-unstyled fs-sm pt-3 pb-2 border-bottom">
+              <li class="d-flex justify-content-between align-items-center"><span class="me-2">Subtotal:</span><span class="text-end">$56.<small>00</small></span></li>
+              <li class="d-flex justify-content-between align-items-center"><span class="me-2">Taxes:</span><span class="text-end">$9.<small>30</small></span></li>
+            </ul>
+            <h3 class="fw-normal text-center my-4">$65.<small>30</small></h3>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+{% include 'marketplace-footer'%}

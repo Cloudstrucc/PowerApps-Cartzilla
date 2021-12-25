@@ -1,0 +1,56 @@
+
+
+
+{% fetchxml pricelist %}
+<fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+  <entity name="pricelevel">
+    <attribute name="name" />
+    <attribute name="transactioncurrencyid" />
+    <attribute name="enddate" />
+    <attribute name="begindate" />
+    <attribute name="statecode" />
+    <attribute name="pricelevelid" />
+    <order attribute="name" descending="false" />
+    <filter type="and">
+      <condition attribute="name" operator="eq" value="{{pricelistname}}" />
+      <condition attribute="createdon" operator="le" value='{{ "today" | date: "yyyy-MM-dd HH:mm:ss" }}' />
+    </filter>
+  </entity>
+</fetch>
+{% endfetchxml %}
+
+{% if image_size == "large" %}
+    {% assign image_size_value = "100000000" %}
+{% elsif image_size == "medium" %}
+    {% assign image_size_value = "100000001" %}
+{% elsif image_size == "small" %}
+    {% assign image_size-value = "100000002" %}
+{% else %}
+    no value found for image_size</br>
+{% endif %}
+
+{% if pricelist.results.entities.size > 0 %}
+    {% fetchxml image %}
+    <fetch version="1.0" output-format="xml-platform" mapping="logical" distinct="false">
+      <entity name="clds_pricelistimages">
+        <attribute name="clds_pricelistimagesid" />
+        <attribute name="clds_name" />
+        <attribute name="createdon" />
+        <order attribute="clds_name" descending="false" />
+        <filter type="and">
+          <condition attribute="clds_pricelist" operator="eq" uitype="pricelevel" value="{{pricelist.results.entities[0].pricelevelid}}" />
+          <condition attribute="clds_imagesize" operator="eq" value="{{ image_size_value }}" />
+          <condition attribute="createdon" operator="le" value='{{ "today" | date: "yyyy-MM-dd HH:mm:ss" }}' />
+        </filter>
+      </entity>
+    </fetch>
+    {% endfetchxml %}
+    {% if image.results.entities.size > 0 %}
+    <div class="col-md-6 order-md-2"><img class="d-block mx-auto" src="https://cartzilla-dev-cs.crm3.dynamics.com/api/data/v9.0/clds_pricelistimageses({{image.results.entities[0].clds_pricelistimagesid}})/clds_image/$value" alt="VR Collection"></div>
+    {% else %} 
+       <p>no images found</br></p>
+    {% endif %}
+{% else %}
+<p>no records for price list</p>
+{% endif %}
+
